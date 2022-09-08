@@ -1,0 +1,2712 @@
+12:52:25,492 root INFO Running C:/Users/ayaar/OneDrive/Desktop/Seera/crawla_muvi/crawlers/main_scraper.py Namespace(crawler='muvi') 
+12:52:25,530 scrapy.utils.log INFO Scrapy 2.5.0 started (bot: scrapybot)
+12:52:25,549 scrapy.utils.log INFO Versions: lxml 4.6.4.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 36.0.0, Platform Windows-10-10.0.22000-SP0
+12:52:25,549 scrapy.utils.log DEBUG Using reactor: twisted.internet.selectreactor.SelectReactor
+12:52:25,569 scrapy.crawler INFO Overridden settings:
+{'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 200,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 403, 404, 408, 429, 307],
+ 'RETRY_TIMES': 5}
+12:52:25,614 scrapy.extensions.telnet INFO Telnet Password: 9a80c0a7cff19fe2
+12:52:25,645 scrapy.middleware INFO Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+12:52:25,646 root INFO ~~Setting up the scraper~~
+12:52:26,156 root ERROR Starting a new scraper at 2022-09-04 12:52
+12:52:26,175 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+12:52:27,736 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+12:52:27,741 root INFO Total parameters fetched from sheet : 0
+12:52:27,743 botocore.hooks DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+12:52:27,747 botocore.hooks DEBUG Changing event name from before-call.apigateway to before-call.api-gateway
+12:52:27,749 botocore.hooks DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+12:52:27,753 botocore.hooks DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+12:52:27,754 botocore.hooks DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+12:52:27,755 botocore.hooks DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+12:52:27,757 botocore.hooks DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+12:52:27,765 botocore.hooks DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+12:52:27,766 botocore.hooks DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+12:52:27,766 botocore.hooks DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+12:52:27,767 botocore.hooks DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+12:52:27,778 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\endpoints.json
+12:52:27,817 botocore.hooks DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x000001D241B16DD0>
+12:52:27,943 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+12:52:27,959 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x000001D241ACDA20>
+12:52:27,959 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x000001D241BD91B0>
+12:52:28,30 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x000001D241ACD7E0>
+12:52:28,40 botocore.endpoint DEBUG Setting s3 timeout as (60, 60)
+12:52:28,46 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\_retry.json
+12:52:28,48 botocore.client DEBUG Registering retry handlers for service: s3
+12:52:28,52 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000001D241B456C0>
+12:52:28,52 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000001D241B44AF0>
+12:52:28,53 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000001D241B45FC0>
+12:52:28,53 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000001D241B44A60>
+12:52:28,53 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x000001D24200F910>>
+12:52:28,54 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x000001D24200F8E0>>
+12:52:28,54 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000001D241B448B0>
+12:52:28,55 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000001D2419B6560>
+12:52:28,56 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000001D241B44DC0>
+12:52:28,56 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x000001D24200F910>>
+12:52:28,57 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000001D241B460E0>
+12:52:28,57 botocore.endpoint DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': '1B2M2Y8AsgTpgAmY7PhCfg=='}, 'body': b'', 'url': 'https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'context': {'client_region': 'eu-west-1', 'client_config': <botocore.config.Config object at 0x000001D24200E4D0>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'stage-crawla-scraping'}}}
+12:52:28,58 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000001D241F34C40>>
+12:52:28,58 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method S3EndpointSetter.set_signer of <botocore.utils.S3EndpointSetter object at 0x000001D24200FA00>>
+12:52:28,58 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x000001D241BB7700>>
+12:52:28,59 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000001D241B44790>
+12:52:28,59 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000001D24200FA00>>
+12:52:28,59 botocore.utils DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback.
+12:52:28,60 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/
+12:52:28,60 botocore.utils DEBUG URI updated to: https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/
+12:52:28,61 botocore.auth DEBUG Calculating signature using v4 auth.
+12:52:28,61 botocore.auth DEBUG CanonicalRequest:
+PUT
+/muvi/muvi_2022-09-04/
+
+content-md5:1B2M2Y8AsgTpgAmY7PhCfg==
+host:stage-crawla-scraping.s3.eu-west-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20220904T095228Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+12:52:28,62 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20220904T095228Z
+20220904/eu-west-1/s3/aws4_request
+73abefe5fc2071eb7ea352f8832528830371b7b10ac5f1086a941aa6095d9eba
+12:52:28,62 botocore.auth DEBUG Signature:
+6abaccdd78dce3aa4f111f6b8ab11b290e33d9f4aa0f103e70804d16c8407d9a
+12:52:28,63 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/, headers={'User-Agent': b'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': b'1B2M2Y8AsgTpgAmY7PhCfg==', 'X-Amz-Date': b'20220904T095228Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA6HMYQSLG3UZ7EEC6/20220904/eu-west-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=6abaccdd78dce3aa4f111f6b8ab11b290e33d9f4aa0f103e70804d16c8407d9a', 'Content-Length': '0'}>
+12:52:28,65 botocore.httpsession DEBUG Certificate path: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\certifi\cacert.pem
+12:52:28,66 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443
+12:52:28,633 urllib3.connectionpool DEBUG https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443 "PUT /muvi/muvi_2022-09-04/ HTTP/1.1" 200 0
+12:52:28,634 botocore.parsers DEBUG Response headers: {'x-amz-id-2': '5B51IZTlF6rg2r7jp5tgV+6Odq8ItZpZ9KzyFVIA9qOyDYpJaf9QPz359sRuMJjgw2mocGlxd40=', 'x-amz-request-id': 'BJ7TVFZK4XBWS4CJ', 'Date': 'Sun, 04 Sep 2022 09:52:29 GMT', 'ETag': '"d41d8cd98f00b204e9800998ecf8427e"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+12:52:28,634 botocore.parsers DEBUG Response body:
+b''
+12:52:28,636 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x000001D24200F850>
+12:52:28,636 botocore.retryhandler DEBUG No retry needed.
+12:52:28,637 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x000001D24200F910>>
+12:52:31,426 root INFO 
+Crawling the movie:
+Movie id: 8dfb60ce-77f2-4900-a6b3-c1f2add3d317
+current index : 0
+
+12:52:32,326 root INFO 
+Crawling the movie:
+Movie id: 8cdcbdcc-ed4b-4778-b6a5-bac8f9621841
+current index : 1
+
+12:52:33,593 root INFO 
+Crawling the movie:
+Movie id: 114d7786-22da-4f11-b73d-136e7426cc45
+current index : 2
+
+12:52:35,165 root INFO 
+Crawling the movie:
+Movie id: 1c76f73a-d691-485e-97ef-c3609c90b21c
+current index : 3
+
+12:52:37,163 root INFO 
+Crawling the movie:
+Movie id: 8395216c-efe7-4de0-b01b-d6bdb8823ab1
+current index : 4
+
+12:52:37,799 root INFO 
+Crawling the movie:
+Movie id: 91c9b734-4318-4d6c-959f-de717b929f19
+current index : 5
+
+12:52:40,756 root INFO 
+Crawling the movie:
+Movie id: 4a578c80-055c-4573-a843-824e0f86d639
+current index : 6
+
+12:52:41,36 root INFO 
+Crawling the movie:
+Movie id: 9cfaf7ae-b8a9-40a9-aa49-b21ec5a9e18f
+current index : 7
+
+12:52:41,821 root INFO 
+Crawling the movie:
+Movie id: c60fbbcb-b23a-46e6-9fb6-c718c1f4696e
+current index : 8
+
+12:52:42,770 root INFO 
+Crawling the movie:
+Movie id: 770940ac-59e2-4b96-9441-1bd1773f9c07
+current index : 9
+
+12:52:46,187 root INFO 
+Crawling the movie:
+Movie id: 69b0569c-a5fd-4ec4-8a3e-d866587fb302
+current index : 10
+
+12:52:46,747 root INFO 
+Crawling the movie:
+Movie id: 79a56f53-5940-463e-b2f8-570a73a01a20
+current index : 11
+
+12:52:47,826 root INFO 
+Crawling the movie:
+Movie id: 6ae98668-5721-4410-94e1-dca4b4e69cca
+current index : 12
+
+12:52:50,28 root INFO 
+Crawling the movie:
+Movie id: d27f56ee-a842-4648-88fa-4be83debb472
+current index : 13
+
+12:52:50,608 root INFO 
+Crawling the movie:
+Movie id: f74e68aa-7280-4618-9079-5e2c795543b4
+current index : 14
+
+12:52:51,565 root INFO 
+Crawling the movie:
+Movie id: e85fff75-673f-4554-9eef-1e0b2b0a1ca2
+current index : 15
+
+12:52:52,528 root INFO 
+Crawling the movie:
+Movie id: f3979b16-dd7e-42a6-9efd-684bf388703b
+current index : 16
+
+12:52:55,236 root INFO 
+Crawling the movie:
+Movie id: 5291b279-7837-47e2-a8d3-2f8f891f30d6
+current index : 17
+
+12:52:58,932 root INFO 
+Crawling the movie:
+Movie id: 4707835d-03ea-4e1c-963c-374621931bdc
+current index : 18
+
+12:53:46,141 root INFO 
+Crawling the movie:
+Movie id: 58da6b1b-e407-40ce-89dd-09a8742582c8
+current index : 19
+
+12:53:48,692 root INFO 
+Crawling the movie:
+Movie id: 0a66c1b7-4fea-439b-b187-f3b357f868a0
+current index : 20
+
+12:53:50,280 root INFO 
+Crawling the movie:
+Movie id: b09bd597-bd05-4bae-8488-52ea1313cbdf
+current index : 21
+
+12:53:51,435 root INFO 
+Crawling the movie:
+Movie id: 05be0519-cb40-444d-aadd-38d97e32e45f
+current index : 22
+
+12:53:51,935 root INFO 
+Crawling the movie:
+Movie id: f4082150-03d6-4c32-89c5-570c0a3e3f8d
+current index : 23
+
+12:53:53,571 root INFO 
+Crawling the movie:
+Movie id: acb61717-f89a-43c6-8f19-f7c6a4262f15
+current index : 24
+
+12:53:55,166 root INFO 
+Crawling the movie:
+Movie id: 09b010f3-f45f-4ec6-96aa-28b277a05a36
+current index : 25
+
+12:53:56,952 root INFO 
+Crawling the movie:
+Movie id: e0790197-fdc4-4232-9233-cd72da964519
+current index : 26
+
+12:53:57,221 root INFO 
+Crawling the movie:
+Movie id: 03fd7998-00d4-4adb-b296-a88c5b52fdf2
+current index : 27
+
+12:53:58,883 root INFO 
+Crawling the movie:
+Movie id: bd70e418-bf69-4d8d-9094-26d1912027c2
+current index : 28
+
+12:54:00,293 root INFO 
+Crawling the movie:
+Movie id: ecd051c9-4f37-415e-8782-518aff258504
+current index : 29
+
+12:54:01,999 root INFO 
+Crawling the movie:
+Movie id: e1e7ad9e-6cce-475f-8dcf-1e027cabafa9
+current index : 30
+
+12:54:02,472 root INFO 
+Crawling the movie:
+Movie id: 221f57cf-987b-403d-8887-fd97236c9df0
+current index : 31
+
+12:54:04,596 root INFO 
+Crawling the movie:
+Movie id: a9eb8675-418d-4e4c-bba6-79b2673501a7
+current index : 32
+
+12:54:06,234 root INFO 
+Crawling the movie:
+Movie id: a03c42a8-6964-4cc9-a99f-b9f6474f34c0
+current index : 33
+
+12:54:06,544 root INFO 
+Crawling the movie:
+Movie id: 0acaa96b-f26a-406c-ba10-0849f4d2b386
+current index : 34
+
+12:54:08,978 root INFO 
+Crawling the movie:
+Movie id: 95d233d6-4c17-4fc0-995d-8c05d9b6e68e
+current index : 35
+
+12:54:10,148 root INFO 
+Crawling the movie:
+Movie id: e57e7b1c-423c-4cdc-a707-fdbac181307e
+current index : 36
+
+12:54:11,639 root INFO 
+Crawling the movie:
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+current index : 37
+
+12:54:12,753 root ERROR unable to find attribute path : FlightJourneys.0.TotalDurationInMinutes in data
+12:54:12,768 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+12:54:13,328 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+12:54:13,331 root ERROR unable to find attribute path : FlightJourneys.0.FlightItems.0.FlightName in data
+12:54:13,346 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+12:54:13,766 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+12:54:13,769 root ERROR unable to find attribute path : FlightJourneys.0.FlightItems.0.FlightInfo.FlightCode in data
+12:54:13,788 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+12:54:14,229 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+12:54:14,232 root ERROR unable to find attribute path : CompanyGenQuoteDetails.0.AirlineTax in data
+12:54:14,245 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+12:54:14,644 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+12:54:14,646 root ERROR unable to find attribute path : FinalTotalFare in data
+12:54:14,658 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+12:54:15,80 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+12:54:15,83 root ERROR unable to find attribute path : CompanyGenQuoteDetails.0.BaseFare in data
+12:54:15,95 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+12:54:15,484 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+12:54:15,487 root ERROR unable to find attribute path : CompanyGenQuoteDetails.0.ServiceCharge in data
+12:54:15,499 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+12:54:15,993 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+12:54:15,996 root ERROR unable to find attribute path : FlightJourneys.0.FlightItems.0.DepartureDateTime in data
+12:54:16,11 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+12:54:16,415 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+12:59:20,863 root INFO Pushing show times available into S3 with total 960 showtimes
+12:59:21,297 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000001D241B456C0>
+12:59:21,297 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000001D241B44AF0>
+12:59:21,298 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000001D241B45FC0>
+12:59:21,298 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000001D241B44A60>
+12:59:21,298 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x000001D24200F910>>
+12:59:21,298 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x000001D24200F8E0>>
+12:59:21,299 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000001D241B448B0>
+12:59:21,299 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000001D2419B6560>
+12:59:21,300 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000001D241B44DC0>
+12:59:21,300 botocore.handlers DEBUG Adding expect 100 continue header to request.
+12:59:21,301 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x000001D24200F910>>
+12:59:21,301 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000001D241B460E0>
+12:59:21,301 botocore.endpoint DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/stage-crawla-scraping/muvi/muvi_2022-09-04/muvi_2022-09-04.json', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': '5rJBJY62MOpu2ChKeV64cA==', 'Expect': '100-continue'}, 'body': <_io.BytesIO object at 0x000001D242240130>, 'url': 'https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/muvi_2022-09-04.json', 'context': {'client_region': 'eu-west-1', 'client_config': <botocore.config.Config object at 0x000001D24200E4D0>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'stage-crawla-scraping'}}}
+12:59:21,302 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000001D241F34C40>>
+12:59:21,302 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method S3EndpointSetter.set_signer of <botocore.utils.S3EndpointSetter object at 0x000001D24200FA00>>
+12:59:21,302 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x000001D241BB7700>>
+12:59:21,302 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000001D241B44790>
+12:59:21,303 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000001D24200FA00>>
+12:59:21,303 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/muvi_2022-09-04.json
+12:59:21,303 botocore.utils DEBUG URI updated to: https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/muvi_2022-09-04.json
+12:59:21,304 botocore.auth DEBUG Calculating signature using v4 auth.
+12:59:21,304 botocore.auth DEBUG CanonicalRequest:
+PUT
+/muvi/muvi_2022-09-04/muvi_2022-09-04.json
+
+content-md5:5rJBJY62MOpu2ChKeV64cA==
+host:stage-crawla-scraping.s3.eu-west-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20220904T095921Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+12:59:21,305 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20220904T095921Z
+20220904/eu-west-1/s3/aws4_request
+631d6fee98b9e42252aeeb1bfaa8ea71494e7453e7f519a6634d5b995abdff2d
+12:59:21,305 botocore.auth DEBUG Signature:
+2e953d54a1efa3aa2077dfc802a54328f5f56ab5f5c5ab73f24a19bfc6861681
+12:59:21,316 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/muvi_2022-09-04.json, headers={'User-Agent': b'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': b'5rJBJY62MOpu2ChKeV64cA==', 'Expect': b'100-continue', 'X-Amz-Date': b'20220904T095921Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA6HMYQSLG3UZ7EEC6/20220904/eu-west-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=2e953d54a1efa3aa2077dfc802a54328f5f56ab5f5c5ab73f24a19bfc6861681', 'Content-Length': '198679'}>
+12:59:21,317 botocore.httpsession DEBUG Certificate path: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\certifi\cacert.pem
+12:59:21,318 urllib3.connectionpool DEBUG Resetting dropped connection: stage-crawla-scraping.s3.eu-west-1.amazonaws.com
+12:59:22,756 botocore.awsrequest DEBUG Waiting for 100 Continue response.
+12:59:22,868 botocore.awsrequest DEBUG 100 Continue response seen, now sending request body.
+12:59:23,334 urllib3.connectionpool DEBUG https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443 "PUT /muvi/muvi_2022-09-04/muvi_2022-09-04.json HTTP/1.1" 200 0
+12:59:23,335 botocore.parsers DEBUG Response headers: {'x-amz-id-2': '8MeJfyWQ2eUT3JlIiSreAo4riNnJXwvAgAUyoCRpEY9h1KmEZUKeVcBpkWmFX/zgDAK9KD1RwYs=', 'x-amz-request-id': 'F4AAQG7EYG93738G', 'Date': 'Sun, 04 Sep 2022 09:59:23 GMT', 'ETag': '"e6b241258eb630ea6ed8284a795eb870"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+12:59:23,335 botocore.parsers DEBUG Response body:
+b''
+12:59:23,336 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x000001D24200F850>
+12:59:23,336 botocore.retryhandler DEBUG No retry needed.
+12:59:23,337 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x000001D24200F910>>
+12:59:23,359 root ERROR Ending the scraper at 2022-09-04 12:59
+12:59:23,372 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+12:59:23,905 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+12:59:23,913 crawlers INFO starting reactor...
+12:59:33,330 root INFO Running C:/Users/ayaar/OneDrive/Desktop/Seera/crawla_muvi/crawlers/main_scraper.py Namespace(crawler='muvi') 
+12:59:33,364 scrapy.utils.log INFO Scrapy 2.5.0 started (bot: scrapybot)
+12:59:33,377 scrapy.utils.log INFO Versions: lxml 4.6.4.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 36.0.0, Platform Windows-10-10.0.22000-SP0
+12:59:33,378 scrapy.utils.log DEBUG Using reactor: twisted.internet.selectreactor.SelectReactor
+12:59:33,401 scrapy.crawler INFO Overridden settings:
+{'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 200,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 403, 404, 408, 429, 307],
+ 'RETRY_TIMES': 5}
+12:59:33,432 scrapy.extensions.telnet INFO Telnet Password: 0e8bb558e8963de9
+12:59:33,454 scrapy.middleware INFO Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+12:59:33,454 root INFO ~~Setting up the scraper~~
+12:59:33,857 root ERROR Starting a new scraper at 2022-09-04 12:59
+12:59:33,873 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+12:59:34,275 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+12:59:34,278 root INFO Total parameters fetched from sheet : 0
+12:59:34,280 botocore.hooks DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+12:59:34,284 botocore.hooks DEBUG Changing event name from before-call.apigateway to before-call.api-gateway
+12:59:34,286 botocore.hooks DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+12:59:34,290 botocore.hooks DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+12:59:34,290 botocore.hooks DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+12:59:34,292 botocore.hooks DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+12:59:34,294 botocore.hooks DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+12:59:34,301 botocore.hooks DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+12:59:34,302 botocore.hooks DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+12:59:34,302 botocore.hooks DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+12:59:34,303 botocore.hooks DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+12:59:34,307 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\endpoints.json
+12:59:34,344 botocore.hooks DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x0000018B4F2AEE60>
+12:59:34,438 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+12:59:34,455 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x0000018B4F265AB0>
+12:59:34,456 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x0000018B4F36D240>
+12:59:34,507 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x0000018B4F265870>
+12:59:34,516 botocore.endpoint DEBUG Setting s3 timeout as (60, 60)
+12:59:34,518 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\_retry.json
+12:59:34,519 botocore.client DEBUG Registering retry handlers for service: s3
+12:59:34,524 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x0000018B4F2D5750>
+12:59:34,524 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x0000018B4F2D4B80>
+12:59:34,524 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x0000018B4F2D6050>
+12:59:34,524 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x0000018B4F2D4AF0>
+12:59:34,525 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000018B4F7A3AC0>>
+12:59:34,525 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000018B4F7A3A90>>
+12:59:34,525 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x0000018B4F2D4940>
+12:59:34,526 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x0000018B4F1465F0>
+12:59:34,527 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x0000018B4F2D4E50>
+12:59:34,527 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000018B4F7A3AC0>>
+12:59:34,528 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x0000018B4F2D6170>
+12:59:34,528 botocore.endpoint DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': '1B2M2Y8AsgTpgAmY7PhCfg=='}, 'body': b'', 'url': 'https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'context': {'client_region': 'eu-west-1', 'client_config': <botocore.config.Config object at 0x0000018B4F7A2680>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'stage-crawla-scraping'}}}
+12:59:34,529 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000018B4F948DF0>>
+12:59:34,529 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method S3EndpointSetter.set_signer of <botocore.utils.S3EndpointSetter object at 0x0000018B4F7A3BB0>>
+12:59:34,529 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x0000018B4F34F8B0>>
+12:59:34,530 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x0000018B4F2D4820>
+12:59:34,530 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x0000018B4F7A3BB0>>
+12:59:34,531 botocore.utils DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback.
+12:59:34,531 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/
+12:59:34,531 botocore.utils DEBUG URI updated to: https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/
+12:59:34,532 botocore.auth DEBUG Calculating signature using v4 auth.
+12:59:34,532 botocore.auth DEBUG CanonicalRequest:
+PUT
+/muvi/muvi_2022-09-04/
+
+content-md5:1B2M2Y8AsgTpgAmY7PhCfg==
+host:stage-crawla-scraping.s3.eu-west-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20220904T095934Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+12:59:34,532 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20220904T095934Z
+20220904/eu-west-1/s3/aws4_request
+2ca5ce44a05efbb32d31031315002e4470a5b3f4d115df22609cea91eef34602
+12:59:34,533 botocore.auth DEBUG Signature:
+438e722195d5af5de117b9773c240d022f96d8025597275341aa0d555eac2327
+12:59:34,534 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/, headers={'User-Agent': b'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': b'1B2M2Y8AsgTpgAmY7PhCfg==', 'X-Amz-Date': b'20220904T095934Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA6HMYQSLG3UZ7EEC6/20220904/eu-west-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=438e722195d5af5de117b9773c240d022f96d8025597275341aa0d555eac2327', 'Content-Length': '0'}>
+12:59:34,535 botocore.httpsession DEBUG Certificate path: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\certifi\cacert.pem
+12:59:34,536 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443
+12:59:35,125 urllib3.connectionpool DEBUG https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443 "PUT /muvi/muvi_2022-09-04/ HTTP/1.1" 200 0
+12:59:35,126 botocore.parsers DEBUG Response headers: {'x-amz-id-2': 'MJtKuRZGRpoNa+30zDoWX/1ayRmPhaP0+CP1Pllz6/dv1dzBNm+grqE2NvmVglHqA+3YIOtwg4k=', 'x-amz-request-id': '23H866BNEHX2C20J', 'Date': 'Sun, 04 Sep 2022 09:59:36 GMT', 'ETag': '"d41d8cd98f00b204e9800998ecf8427e"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+12:59:35,126 botocore.parsers DEBUG Response body:
+b''
+12:59:35,127 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000018B4F7A3A00>
+12:59:35,128 botocore.retryhandler DEBUG No retry needed.
+12:59:35,128 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000018B4F7A3AC0>>
+12:59:37,445 root INFO 
+Crawling the movie:
+Movie id: 8dfb60ce-77f2-4900-a6b3-c1f2add3d317
+current index : 0
+
+12:59:38,851 root INFO 
+Crawling the movie:
+Movie id: 8cdcbdcc-ed4b-4778-b6a5-bac8f9621841
+current index : 1
+
+12:59:39,372 root INFO 
+Crawling the movie:
+Movie id: 114d7786-22da-4f11-b73d-136e7426cc45
+current index : 2
+
+12:59:40,901 root INFO 
+Crawling the movie:
+Movie id: 1c76f73a-d691-485e-97ef-c3609c90b21c
+current index : 3
+
+12:59:42,404 root INFO 
+Crawling the movie:
+Movie id: 8395216c-efe7-4de0-b01b-d6bdb8823ab1
+current index : 4
+
+12:59:43,511 root INFO 
+Crawling the movie:
+Movie id: 91c9b734-4318-4d6c-959f-de717b929f19
+current index : 5
+
+12:59:44,407 root INFO 
+Crawling the movie:
+Movie id: 4a578c80-055c-4573-a843-824e0f86d639
+current index : 6
+
+12:59:45,422 root INFO 
+Crawling the movie:
+Movie id: 9cfaf7ae-b8a9-40a9-aa49-b21ec5a9e18f
+current index : 7
+
+12:59:46,908 root INFO 
+Crawling the movie:
+Movie id: c60fbbcb-b23a-46e6-9fb6-c718c1f4696e
+current index : 8
+
+12:59:48,169 root INFO 
+Crawling the movie:
+Movie id: 770940ac-59e2-4b96-9441-1bd1773f9c07
+current index : 9
+
+12:59:50,164 root INFO 
+Crawling the movie:
+Movie id: 69b0569c-a5fd-4ec4-8a3e-d866587fb302
+current index : 10
+
+12:59:50,511 root INFO 
+Crawling the movie:
+Movie id: 79a56f53-5940-463e-b2f8-570a73a01a20
+current index : 11
+
+12:59:51,350 root INFO 
+Crawling the movie:
+Movie id: 6ae98668-5721-4410-94e1-dca4b4e69cca
+current index : 12
+
+12:59:52,505 root INFO 
+Crawling the movie:
+Movie id: d27f56ee-a842-4648-88fa-4be83debb472
+current index : 13
+
+12:59:53,902 root INFO 
+Crawling the movie:
+Movie id: f74e68aa-7280-4618-9079-5e2c795543b4
+current index : 14
+
+12:59:55,454 root INFO 
+Crawling the movie:
+Movie id: e85fff75-673f-4554-9eef-1e0b2b0a1ca2
+current index : 15
+
+12:59:57,202 root INFO 
+Crawling the movie:
+Movie id: f3979b16-dd7e-42a6-9efd-684bf388703b
+current index : 16
+
+12:59:57,519 root INFO 
+Crawling the movie:
+Movie id: 5291b279-7837-47e2-a8d3-2f8f891f30d6
+current index : 17
+
+12:59:58,161 root INFO 
+Crawling the movie:
+Movie id: 4707835d-03ea-4e1c-963c-374621931bdc
+current index : 18
+
+12:59:59,953 root INFO 
+Crawling the movie:
+Movie id: 58da6b1b-e407-40ce-89dd-09a8742582c8
+current index : 19
+
+13:00:00,424 root INFO 
+Crawling the movie:
+Movie id: 0a66c1b7-4fea-439b-b187-f3b357f868a0
+current index : 20
+
+13:00:01,91 root INFO 
+Crawling the movie:
+Movie id: b09bd597-bd05-4bae-8488-52ea1313cbdf
+current index : 21
+
+13:00:02,100 root INFO 
+Crawling the movie:
+Movie id: 05be0519-cb40-444d-aadd-38d97e32e45f
+current index : 22
+
+13:00:05,249 root INFO 
+Crawling the movie:
+Movie id: f4082150-03d6-4c32-89c5-570c0a3e3f8d
+current index : 23
+
+13:00:05,664 root INFO 
+Crawling the movie:
+Movie id: acb61717-f89a-43c6-8f19-f7c6a4262f15
+current index : 24
+
+13:00:06,906 root INFO 
+Crawling the movie:
+Movie id: 09b010f3-f45f-4ec6-96aa-28b277a05a36
+current index : 25
+
+13:00:08,368 root INFO 
+Crawling the movie:
+Movie id: e0790197-fdc4-4232-9233-cd72da964519
+current index : 26
+
+13:00:09,748 root INFO 
+Crawling the movie:
+Movie id: 03fd7998-00d4-4adb-b296-a88c5b52fdf2
+current index : 27
+
+13:00:11,134 root INFO 
+Crawling the movie:
+Movie id: bd70e418-bf69-4d8d-9094-26d1912027c2
+current index : 28
+
+13:00:12,719 root INFO 
+Crawling the movie:
+Movie id: ecd051c9-4f37-415e-8782-518aff258504
+current index : 29
+
+13:00:13,336 root INFO 
+Crawling the movie:
+Movie id: e1e7ad9e-6cce-475f-8dcf-1e027cabafa9
+current index : 30
+
+13:00:14,653 root INFO 
+Crawling the movie:
+Movie id: 221f57cf-987b-403d-8887-fd97236c9df0
+current index : 31
+
+13:00:15,621 root INFO 
+Crawling the movie:
+Movie id: a9eb8675-418d-4e4c-bba6-79b2673501a7
+current index : 32
+
+13:00:16,470 root INFO 
+Crawling the movie:
+Movie id: a03c42a8-6964-4cc9-a99f-b9f6474f34c0
+current index : 33
+
+13:00:17,918 root INFO 
+Crawling the movie:
+Movie id: 0acaa96b-f26a-406c-ba10-0849f4d2b386
+current index : 34
+
+13:00:19,175 root INFO 
+Crawling the movie:
+Movie id: 95d233d6-4c17-4fc0-995d-8c05d9b6e68e
+current index : 35
+
+13:00:20,30 root INFO 
+Crawling the movie:
+Movie id: e57e7b1c-423c-4cdc-a707-fdbac181307e
+current index : 36
+
+13:00:21,461 root INFO 
+Crawling the movie:
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+current index : 37
+
+13:00:22,574 root ERROR unable to find attribute path : FlightJourneys.0.TotalDurationInMinutes in data
+13:00:22,586 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:00:22,988 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:00:22,990 root ERROR unable to find attribute path : FlightJourneys.0.FlightItems.0.FlightName in data
+13:00:23,2 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:00:24,538 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:00:24,540 root ERROR unable to find attribute path : FlightJourneys.0.FlightItems.0.FlightInfo.FlightCode in data
+13:00:24,552 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:00:25,71 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:00:25,74 root ERROR unable to find attribute path : CompanyGenQuoteDetails.0.AirlineTax in data
+13:00:25,86 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:00:25,486 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:00:25,489 root ERROR unable to find attribute path : FinalTotalFare in data
+13:00:25,501 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:00:25,911 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:00:25,914 root ERROR unable to find attribute path : CompanyGenQuoteDetails.0.BaseFare in data
+13:00:25,927 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:00:26,330 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:00:26,333 root ERROR unable to find attribute path : CompanyGenQuoteDetails.0.ServiceCharge in data
+13:00:26,345 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:00:26,756 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:00:26,759 root ERROR unable to find attribute path : FlightJourneys.0.FlightItems.0.DepartureDateTime in data
+13:00:26,771 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:00:27,170 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:00:27,324 root INFO Pushing show times available into S3 with total 960 showtimes
+13:40:04,760 root INFO Running C:/Users/ayaar/OneDrive/Desktop/Seera/crawla_muvi/crawlers/main_scraper.py Namespace(crawler='muvi') 
+13:40:04,799 scrapy.utils.log INFO Scrapy 2.5.0 started (bot: scrapybot)
+13:40:04,816 scrapy.utils.log INFO Versions: lxml 4.6.4.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 36.0.0, Platform Windows-10-10.0.22000-SP0
+13:40:04,816 scrapy.utils.log DEBUG Using reactor: twisted.internet.selectreactor.SelectReactor
+13:40:04,838 scrapy.crawler INFO Overridden settings:
+{'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 200,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 403, 404, 408, 429, 307],
+ 'RETRY_TIMES': 5}
+13:40:04,886 scrapy.extensions.telnet INFO Telnet Password: 95f96610fa0f2967
+13:40:04,916 scrapy.middleware INFO Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+13:40:04,916 root INFO ~~Setting up the scraper~~
+13:40:05,379 root ERROR Starting a new scraper at 2022-09-04 13:40
+13:40:05,397 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:40:06,960 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:40:06,963 root INFO Total parameters fetched from sheet : 0
+13:40:06,965 botocore.hooks DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+13:40:06,970 botocore.hooks DEBUG Changing event name from before-call.apigateway to before-call.api-gateway
+13:40:06,972 botocore.hooks DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+13:40:06,976 botocore.hooks DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+13:40:06,976 botocore.hooks DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+13:40:06,977 botocore.hooks DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+13:40:06,979 botocore.hooks DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+13:40:06,987 botocore.hooks DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+13:40:06,988 botocore.hooks DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+13:40:06,988 botocore.hooks DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+13:40:06,989 botocore.hooks DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+13:40:07,5 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\endpoints.json
+13:40:07,49 botocore.hooks DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x000001A18256ED40>
+13:40:07,200 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+13:40:07,215 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x000001A182525990>
+13:40:07,216 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x000001A182629120>
+13:40:07,293 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x000001A182525750>
+13:40:07,304 botocore.endpoint DEBUG Setting s3 timeout as (60, 60)
+13:40:07,307 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\_retry.json
+13:40:07,309 botocore.client DEBUG Registering retry handlers for service: s3
+13:40:07,314 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000001A182595630>
+13:40:07,314 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000001A182594A60>
+13:40:07,314 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000001A182595F30>
+13:40:07,315 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000001A1825949D0>
+13:40:07,315 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x000001A18295BAC0>>
+13:40:07,315 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x000001A18295BA90>>
+13:40:07,316 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000001A182594820>
+13:40:07,317 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000001A18240A4D0>
+13:40:07,318 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000001A182594D30>
+13:40:07,319 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x000001A18295BAC0>>
+13:40:07,319 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000001A182596050>
+13:40:07,320 botocore.endpoint DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': '1B2M2Y8AsgTpgAmY7PhCfg=='}, 'body': b'', 'url': 'https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'context': {'client_region': 'eu-west-1', 'client_config': <botocore.config.Config object at 0x000001A18295A680>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'stage-crawla-scraping'}}}
+13:40:07,321 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000001A182C04DF0>>
+13:40:07,321 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method S3EndpointSetter.set_signer of <botocore.utils.S3EndpointSetter object at 0x000001A18295BBB0>>
+13:40:07,321 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x000001A18260B8B0>>
+13:40:07,322 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000001A182594700>
+13:40:07,322 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000001A18295BBB0>>
+13:40:07,322 botocore.utils DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback.
+13:40:07,323 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/
+13:40:07,323 botocore.utils DEBUG URI updated to: https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/
+13:40:07,324 botocore.auth DEBUG Calculating signature using v4 auth.
+13:40:07,324 botocore.auth DEBUG CanonicalRequest:
+PUT
+/muvi/muvi_2022-09-04/
+
+content-md5:1B2M2Y8AsgTpgAmY7PhCfg==
+host:stage-crawla-scraping.s3.eu-west-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20220904T104007Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+13:40:07,325 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20220904T104007Z
+20220904/eu-west-1/s3/aws4_request
+7658273e1603d0cf7cae2941d8daec211613278a951e8e3bd63e7cef7662019e
+13:40:07,325 botocore.auth DEBUG Signature:
+7a6848715b5cd1739ede6cfb225de9c521ee545d8f78c415a95997522ae6e3a9
+13:40:07,326 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/, headers={'User-Agent': b'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': b'1B2M2Y8AsgTpgAmY7PhCfg==', 'X-Amz-Date': b'20220904T104007Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA6HMYQSLG3UZ7EEC6/20220904/eu-west-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=7a6848715b5cd1739ede6cfb225de9c521ee545d8f78c415a95997522ae6e3a9', 'Content-Length': '0'}>
+13:40:07,328 botocore.httpsession DEBUG Certificate path: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\certifi\cacert.pem
+13:40:07,329 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443
+13:40:08,17 urllib3.connectionpool DEBUG https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443 "PUT /muvi/muvi_2022-09-04/ HTTP/1.1" 200 0
+13:40:08,18 botocore.parsers DEBUG Response headers: {'x-amz-id-2': 'WXOD3Y8OVF1JTkaF1DzxDwT0EpEDojZJ8QFsFt3UVlSeZhje2J9tbv7Ee9IuyvZFDIuLmIuIPaA=', 'x-amz-request-id': 'VQ4ADQ66BQP57VXP', 'Date': 'Sun, 04 Sep 2022 10:40:09 GMT', 'ETag': '"d41d8cd98f00b204e9800998ecf8427e"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+13:40:08,18 botocore.parsers DEBUG Response body:
+b''
+13:40:08,19 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x000001A18295BA00>
+13:40:08,20 botocore.retryhandler DEBUG No retry needed.
+13:40:08,20 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x000001A18295BAC0>>
+13:40:11,153 root INFO 
+Crawling the movie:
+Movie id: 8dfb60ce-77f2-4900-a6b3-c1f2add3d317
+current index : 0
+
+13:40:11,882 root INFO 
+Crawling the movie:
+Movie id: 8cdcbdcc-ed4b-4778-b6a5-bac8f9621841
+current index : 1
+
+13:40:12,812 root INFO 
+Crawling the movie:
+Movie id: 114d7786-22da-4f11-b73d-136e7426cc45
+current index : 2
+
+13:40:14,199 root INFO 
+Crawling the movie:
+Movie id: 1c76f73a-d691-485e-97ef-c3609c90b21c
+current index : 3
+
+13:40:15,798 root INFO 
+Crawling the movie:
+Movie id: 8395216c-efe7-4de0-b01b-d6bdb8823ab1
+current index : 4
+
+13:40:16,567 root INFO 
+Crawling the movie:
+Movie id: 91c9b734-4318-4d6c-959f-de717b929f19
+current index : 5
+
+13:40:18,246 root INFO 
+Crawling the movie:
+Movie id: 4a578c80-055c-4573-a843-824e0f86d639
+current index : 6
+
+13:40:18,483 root INFO 
+Crawling the movie:
+Movie id: 9cfaf7ae-b8a9-40a9-aa49-b21ec5a9e18f
+current index : 7
+
+13:40:19,916 root INFO 
+Crawling the movie:
+Movie id: c60fbbcb-b23a-46e6-9fb6-c718c1f4696e
+current index : 8
+
+13:40:21,531 root INFO 
+Crawling the movie:
+Movie id: 770940ac-59e2-4b96-9441-1bd1773f9c07
+current index : 9
+
+13:40:22,489 root INFO 
+Crawling the movie:
+Movie id: 69b0569c-a5fd-4ec4-8a3e-d866587fb302
+current index : 10
+
+13:40:23,763 root INFO 
+Crawling the movie:
+Movie id: 79a56f53-5940-463e-b2f8-570a73a01a20
+current index : 11
+
+13:40:25,285 root INFO 
+Crawling the movie:
+Movie id: 6ae98668-5721-4410-94e1-dca4b4e69cca
+current index : 12
+
+13:40:26,594 root INFO 
+Crawling the movie:
+Movie id: d27f56ee-a842-4648-88fa-4be83debb472
+current index : 13
+
+13:40:27,572 root INFO 
+Crawling the movie:
+Movie id: f74e68aa-7280-4618-9079-5e2c795543b4
+current index : 14
+
+13:40:28,837 root INFO 
+Crawling the movie:
+Movie id: e85fff75-673f-4554-9eef-1e0b2b0a1ca2
+current index : 15
+
+13:40:30,657 root INFO 
+Crawling the movie:
+Movie id: f3979b16-dd7e-42a6-9efd-684bf388703b
+current index : 16
+
+13:40:30,925 root INFO 
+Crawling the movie:
+Movie id: 5291b279-7837-47e2-a8d3-2f8f891f30d6
+current index : 17
+
+13:40:33,118 root INFO 
+Crawling the movie:
+Movie id: 4707835d-03ea-4e1c-963c-374621931bdc
+current index : 18
+
+13:40:33,546 root INFO 
+Crawling the movie:
+Movie id: 58da6b1b-e407-40ce-89dd-09a8742582c8
+current index : 19
+
+13:40:35,251 root INFO 
+Crawling the movie:
+Movie id: 0a66c1b7-4fea-439b-b187-f3b357f868a0
+current index : 20
+
+13:40:36,666 root INFO 
+Crawling the movie:
+Movie id: b09bd597-bd05-4bae-8488-52ea1313cbdf
+current index : 21
+
+13:40:38,438 root INFO 
+Crawling the movie:
+Movie id: 05be0519-cb40-444d-aadd-38d97e32e45f
+current index : 22
+
+13:40:40,81 root INFO 
+Crawling the movie:
+Movie id: f4082150-03d6-4c32-89c5-570c0a3e3f8d
+current index : 23
+
+13:40:40,447 root INFO 
+Crawling the movie:
+Movie id: acb61717-f89a-43c6-8f19-f7c6a4262f15
+current index : 24
+
+13:40:43,58 root INFO 
+Crawling the movie:
+Movie id: 09b010f3-f45f-4ec6-96aa-28b277a05a36
+current index : 25
+
+13:40:45,553 root INFO 
+Crawling the movie:
+Movie id: e0790197-fdc4-4232-9233-cd72da964519
+current index : 26
+
+13:40:45,833 root INFO 
+Crawling the movie:
+Movie id: 03fd7998-00d4-4adb-b296-a88c5b52fdf2
+current index : 27
+
+13:40:47,709 root INFO 
+Crawling the movie:
+Movie id: bd70e418-bf69-4d8d-9094-26d1912027c2
+current index : 28
+
+13:40:48,891 root INFO 
+Crawling the movie:
+Movie id: ecd051c9-4f37-415e-8782-518aff258504
+current index : 29
+
+13:40:50,139 root INFO 
+Crawling the movie:
+Movie id: e1e7ad9e-6cce-475f-8dcf-1e027cabafa9
+current index : 30
+
+13:40:50,473 root INFO 
+Crawling the movie:
+Movie id: 221f57cf-987b-403d-8887-fd97236c9df0
+current index : 31
+
+13:40:51,968 root INFO 
+Crawling the movie:
+Movie id: a9eb8675-418d-4e4c-bba6-79b2673501a7
+current index : 32
+
+13:40:53,446 root INFO 
+Crawling the movie:
+Movie id: a03c42a8-6964-4cc9-a99f-b9f6474f34c0
+current index : 33
+
+13:40:53,729 root INFO 
+Crawling the movie:
+Movie id: 0acaa96b-f26a-406c-ba10-0849f4d2b386
+current index : 34
+
+13:40:56,55 root INFO 
+Crawling the movie:
+Movie id: 95d233d6-4c17-4fc0-995d-8c05d9b6e68e
+current index : 35
+
+13:40:57,486 root INFO 
+Crawling the movie:
+Movie id: e57e7b1c-423c-4cdc-a707-fdbac181307e
+current index : 36
+
+13:40:59,264 root INFO 
+Crawling the movie:
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+current index : 37
+
+13:41:09,985 root ERROR unable to find attribute path : FlightJourneys.0.TotalDurationInMinutes in data
+13:41:09,998 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:41:11,540 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:41:11,543 root ERROR unable to find attribute path : FlightJourneys.0.FlightItems.0.FlightName in data
+13:41:11,555 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:41:12,23 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:41:12,27 root ERROR unable to find attribute path : FlightJourneys.0.FlightItems.0.FlightInfo.FlightCode in data
+13:41:12,52 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:41:12,534 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:41:12,537 root ERROR unable to find attribute path : CompanyGenQuoteDetails.0.AirlineTax in data
+13:41:12,549 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:41:12,954 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:41:12,956 root ERROR unable to find attribute path : FinalTotalFare in data
+13:41:12,969 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:41:13,456 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:41:13,459 root ERROR unable to find attribute path : CompanyGenQuoteDetails.0.BaseFare in data
+13:41:13,472 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:41:13,879 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:41:13,882 root ERROR unable to find attribute path : CompanyGenQuoteDetails.0.ServiceCharge in data
+13:41:13,894 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:41:14,293 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:41:14,296 root ERROR unable to find attribute path : FlightJourneys.0.FlightItems.0.DepartureDateTime in data
+13:41:14,308 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+13:41:14,720 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+13:41:14,906 root INFO Pushing show times available into S3 with total 910 showtimes
+14:10:44,665 root INFO Running C:\Users\ayaar\OneDrive\Desktop\Seera\crawla_muvi\crawlers\main_scraper.py Namespace(crawler='muvi') 
+14:10:44,680 scrapy.utils.log INFO Scrapy 2.5.0 started (bot: scrapybot)
+14:10:44,701 scrapy.utils.log INFO Versions: lxml 4.6.4.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 36.0.0, Platform Windows-10-10.0.22000-SP0
+14:10:44,701 scrapy.utils.log DEBUG Using reactor: twisted.internet.selectreactor.SelectReactor
+14:10:44,706 scrapy.crawler INFO Overridden settings:
+{'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 200,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 403, 404, 408, 429, 307],
+ 'RETRY_TIMES': 5}
+14:10:44,743 scrapy.extensions.telnet INFO Telnet Password: 0d858f2c94af2a18
+14:10:44,763 scrapy.middleware INFO Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+14:10:44,763 root INFO ~~Setting up the scraper~~
+14:10:45,107 root ERROR Starting a new scraper at 2022-09-04 14:10
+14:10:45,112 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:10:46,647 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:10:46,650 root ERROR Ending the scraper at 2022-09-04 14:10
+14:10:46,653 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:10:47,74 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:10:47,76 scrapy.utils.signal ERROR Error caught on signal handler: <bound method CoreStats.spider_closed of <scrapy.extensions.corestats.CoreStats object at 0x00000235BABE1E70>>
+Traceback (most recent call last):
+  File "C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+AttributeError: 'MuviSpider' object has no attribute 'params'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\utils\defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\extensions\corestats.py", line 31, in spider_closed
+    elapsed_time = finish_time - self.start_time
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+14:10:47,113 crawlers INFO starting reactor...
+14:10:47,149 twisted CRITICAL Unhandled error in Deferred:
+14:10:47,165 twisted CRITICAL 
+Traceback (most recent call last):
+  File "C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 1661, in _inlineCallbacks
+    result = current_context.run(gen.send, result)
+  File "C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+AttributeError: 'MuviSpider' object has no attribute 'params'
+14:12:04,381 root INFO Running C:\Users\ayaar\OneDrive\Desktop\Seera\crawla_muvi\crawlers\main_scraper.py Namespace(crawler='muvi') 
+14:12:04,418 scrapy.utils.log INFO Scrapy 2.5.0 started (bot: scrapybot)
+14:12:04,458 scrapy.utils.log INFO Versions: lxml 4.6.4.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 36.0.0, Platform Windows-10-10.0.22000-SP0
+14:12:04,459 scrapy.utils.log DEBUG Using reactor: twisted.internet.selectreactor.SelectReactor
+14:12:04,472 scrapy.crawler INFO Overridden settings:
+{'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 200,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 403, 404, 408, 429, 307],
+ 'RETRY_TIMES': 5}
+14:12:04,548 scrapy.extensions.telnet INFO Telnet Password: 88a8e0d00222fc3b
+14:12:04,590 scrapy.middleware INFO Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+14:12:04,590 root INFO ~~Setting up the scraper~~
+14:12:05,473 root ERROR Starting a new scraper at 2022-09-04 14:12
+14:12:05,488 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:12:08,97 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:12:08,102 root INFO Total parameters fetched from sheet : 0
+14:12:08,105 botocore.hooks DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+14:12:08,110 botocore.hooks DEBUG Changing event name from before-call.apigateway to before-call.api-gateway
+14:12:08,113 botocore.hooks DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+14:12:08,119 botocore.hooks DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+14:12:08,119 botocore.hooks DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+14:12:08,121 botocore.hooks DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+14:12:08,124 botocore.hooks DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+14:12:08,134 botocore.hooks DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+14:12:08,135 botocore.hooks DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+14:12:08,135 botocore.hooks DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+14:12:08,136 botocore.hooks DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+14:12:08,144 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\endpoints.json
+14:12:08,169 botocore.hooks DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x000002352873EDD0>
+14:12:08,446 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+14:12:08,478 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x00000235286F5D80>
+14:12:08,478 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x00000235287FB2E0>
+14:12:08,591 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x00000235286F5B40>
+14:12:08,600 botocore.endpoint DEBUG Setting s3 timeout as (60, 60)
+14:12:08,604 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\_retry.json
+14:12:08,607 botocore.client DEBUG Registering retry handlers for service: s3
+14:12:08,612 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x0000023528761480>
+14:12:08,613 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x00000235287608B0>
+14:12:08,613 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x0000023528761D80>
+14:12:08,614 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x0000023528760820>
+14:12:08,614 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000023528B12950>>
+14:12:08,615 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000023528B12920>>
+14:12:08,615 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x0000023528760670>
+14:12:08,617 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x00000235285E80D0>
+14:12:08,617 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x0000023528760B80>
+14:12:08,618 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000023528B12950>>
+14:12:08,618 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x0000023528761EA0>
+14:12:08,619 botocore.endpoint DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': '1B2M2Y8AsgTpgAmY7PhCfg=='}, 'body': b'', 'url': 'https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'context': {'client_region': 'eu-west-1', 'client_config': <botocore.config.Config object at 0x0000023528B114B0>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'stage-crawla-scraping'}}}
+14:12:08,620 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000023528D8BB80>>
+14:12:08,621 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method S3EndpointSetter.set_signer of <botocore.utils.S3EndpointSetter object at 0x0000023528B12A40>>
+14:12:08,621 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x00000235287EA740>>
+14:12:08,622 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x0000023528760550>
+14:12:08,622 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x0000023528B12A40>>
+14:12:08,623 botocore.utils DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback.
+14:12:08,623 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/
+14:12:08,624 botocore.utils DEBUG URI updated to: https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/
+14:12:08,625 botocore.auth DEBUG Calculating signature using v4 auth.
+14:12:08,625 botocore.auth DEBUG CanonicalRequest:
+PUT
+/muvi/muvi_2022-09-04/
+
+content-md5:1B2M2Y8AsgTpgAmY7PhCfg==
+host:stage-crawla-scraping.s3.eu-west-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20220904T111208Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+14:12:08,626 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20220904T111208Z
+20220904/eu-west-1/s3/aws4_request
+1e6f6c2a94f400f6187bdd5f8de09c4fa4e4da0ce4a3fb2fea9c33870a8af711
+14:12:08,626 botocore.auth DEBUG Signature:
+bc677728819f4948b2f0734f660a56ba4342394cfdce6e2ac2e69a32fd4d813e
+14:12:08,627 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/, headers={'User-Agent': b'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': b'1B2M2Y8AsgTpgAmY7PhCfg==', 'X-Amz-Date': b'20220904T111208Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA6HMYQSLG3UZ7EEC6/20220904/eu-west-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=bc677728819f4948b2f0734f660a56ba4342394cfdce6e2ac2e69a32fd4d813e', 'Content-Length': '0'}>
+14:12:08,629 botocore.httpsession DEBUG Certificate path: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\certifi\cacert.pem
+14:12:08,631 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443
+14:12:10,223 urllib3.connectionpool DEBUG https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443 "PUT /muvi/muvi_2022-09-04/ HTTP/1.1" 200 0
+14:12:10,224 botocore.parsers DEBUG Response headers: {'x-amz-id-2': 'W0O3qnENDzFEtZbOYpJ2DDKhKlNHD2SPqli9LrOaGi/kYfVthEkXfnwB67F1ex9T5rO1RaumnCU=', 'x-amz-request-id': 'HF0KSYB4N6W5XE36', 'Date': 'Sun, 04 Sep 2022 11:12:11 GMT', 'ETag': '"d41d8cd98f00b204e9800998ecf8427e"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+14:12:10,225 botocore.parsers DEBUG Response body:
+b''
+14:12:10,226 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000023528B12890>
+14:12:10,227 botocore.retryhandler DEBUG No retry needed.
+14:12:10,227 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000023528B12950>>
+14:12:14,213 root INFO 
+Crawling the movie:
+Movie id: 8dfb60ce-77f2-4900-a6b3-c1f2add3d317
+current index : 0
+
+14:12:14,214 root ERROR an error occurred while fetching movie details for:
+Error: name 'movie_id' is not defined
+14:12:14,222 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:12:15,68 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:12:15,80 root ERROR Ending the scraper at 2022-09-04 14:12
+14:12:15,87 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:12:15,536 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:12:15,605 crawlers INFO starting reactor...
+14:13:06,352 root INFO Running C:/Users/ayaar/OneDrive/Desktop/Seera/crawla_muvi/crawlers/main_scraper.py Namespace(crawler='muvi') 
+14:13:06,499 scrapy.utils.log INFO Scrapy 2.5.0 started (bot: scrapybot)
+14:13:06,548 scrapy.utils.log INFO Versions: lxml 4.6.4.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 36.0.0, Platform Windows-10-10.0.22000-SP0
+14:13:06,550 scrapy.utils.log DEBUG Using reactor: twisted.internet.selectreactor.SelectReactor
+14:13:06,619 scrapy.crawler INFO Overridden settings:
+{'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 200,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 403, 404, 408, 429, 307],
+ 'RETRY_TIMES': 5}
+14:13:06,746 scrapy.extensions.telnet INFO Telnet Password: 30d7a7e4a2826dd9
+14:13:06,829 scrapy.middleware INFO Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+14:13:06,831 root INFO ~~Setting up the scraper~~
+14:13:08,527 root ERROR Starting a new scraper at 2022-09-04 14:13
+14:13:08,590 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:13:10,176 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:13:10,187 root INFO Total parameters fetched from sheet : 0
+14:13:10,195 botocore.hooks DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+14:13:10,214 botocore.hooks DEBUG Changing event name from before-call.apigateway to before-call.api-gateway
+14:13:10,223 botocore.hooks DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+14:13:10,239 botocore.hooks DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+14:13:10,241 botocore.hooks DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+14:13:10,246 botocore.hooks DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+14:13:10,254 botocore.hooks DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+14:13:10,285 botocore.hooks DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+14:13:10,287 botocore.hooks DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+14:13:10,289 botocore.hooks DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+14:13:10,291 botocore.hooks DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+14:13:10,310 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\endpoints.json
+14:13:10,418 botocore.hooks DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x000001C179F3AD40>
+14:13:10,696 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+14:13:10,761 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x000001C179EF1990>
+14:13:10,762 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x000001C179FF5120>
+14:13:10,946 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x000001C179EF1750>
+14:13:10,985 botocore.endpoint DEBUG Setting s3 timeout as (60, 60)
+14:13:10,992 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\_retry.json
+14:13:10,997 botocore.client DEBUG Registering retry handlers for service: s3
+14:13:11,14 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000001C179F65630>
+14:13:11,15 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000001C179F64A60>
+14:13:11,16 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000001C179F65F30>
+14:13:11,18 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000001C179F649D0>
+14:13:11,19 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x000001C17A41F7F0>>
+14:13:11,20 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x000001C17A41F7C0>>
+14:13:11,21 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000001C179F64820>
+14:13:11,26 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000001C179DD64D0>
+14:13:11,28 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000001C179F64D30>
+14:13:11,30 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x000001C17A41F7F0>>
+14:13:11,31 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000001C179F66050>
+14:13:11,32 botocore.endpoint DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': '1B2M2Y8AsgTpgAmY7PhCfg=='}, 'body': b'', 'url': 'https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'context': {'client_region': 'eu-west-1', 'client_config': <botocore.config.Config object at 0x000001C17A41E3B0>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'stage-crawla-scraping'}}}
+14:13:11,38 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000001C17A344B20>>
+14:13:11,40 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method S3EndpointSetter.set_signer of <botocore.utils.S3EndpointSetter object at 0x000001C17A41F8E0>>
+14:13:11,42 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x000001C179FD75E0>>
+14:13:11,43 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000001C179F64700>
+14:13:11,45 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000001C17A41F8E0>>
+14:13:11,46 botocore.utils DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback.
+14:13:11,47 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/
+14:13:11,48 botocore.utils DEBUG URI updated to: https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/
+14:13:11,52 botocore.auth DEBUG Calculating signature using v4 auth.
+14:13:11,53 botocore.auth DEBUG CanonicalRequest:
+PUT
+/muvi/muvi_2022-09-04/
+
+content-md5:1B2M2Y8AsgTpgAmY7PhCfg==
+host:stage-crawla-scraping.s3.eu-west-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20220904T111311Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+14:13:11,54 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20220904T111311Z
+20220904/eu-west-1/s3/aws4_request
+62814d5e961279588b2b6d9e152bd860c415aabd57bf0bfd930d71672825b543
+14:13:11,55 botocore.auth DEBUG Signature:
+6ebb2d7fe68b4ae7bacc759bfb36140cd996c76105f6f580a9618b32b78a859c
+14:13:11,59 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/, headers={'User-Agent': b'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': b'1B2M2Y8AsgTpgAmY7PhCfg==', 'X-Amz-Date': b'20220904T111311Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA6HMYQSLG3UZ7EEC6/20220904/eu-west-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=6ebb2d7fe68b4ae7bacc759bfb36140cd996c76105f6f580a9618b32b78a859c', 'Content-Length': '0'}>
+14:13:11,64 botocore.httpsession DEBUG Certificate path: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\certifi\cacert.pem
+14:13:11,68 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443
+14:13:11,610 urllib3.connectionpool DEBUG https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443 "PUT /muvi/muvi_2022-09-04/ HTTP/1.1" 200 0
+14:13:11,613 botocore.parsers DEBUG Response headers: {'x-amz-id-2': 'lnkPu9F2UwdY5rNayxyTMm/gCx9BDb6VY8D8VRgnB6xYLVDQ5JHuEnjPEQRqQTsEGP/2vTedUvA=', 'x-amz-request-id': 'N0BW4ANYHZPCA0AT', 'Date': 'Sun, 04 Sep 2022 11:13:12 GMT', 'ETag': '"d41d8cd98f00b204e9800998ecf8427e"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+14:13:11,615 botocore.parsers DEBUG Response body:
+b''
+14:13:11,619 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x000001C17A41F730>
+14:13:11,621 botocore.retryhandler DEBUG No retry needed.
+14:13:11,622 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x000001C17A41F7F0>>
+14:13:14,478 root INFO 
+Crawling the movie:
+Movie id: 8dfb60ce-77f2-4900-a6b3-c1f2add3d317
+current index : 0
+
+14:13:14,480 root ERROR an error occurred while fetching movie details for:
+Error: name 'movie_id' is not defined
+14:13:14,533 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:13:14,971 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:13:15,6 root ERROR Ending the scraper at 2022-09-04 14:13
+14:13:15,55 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:13:15,557 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:13:15,643 crawlers INFO starting reactor...
+14:13:47,786 root INFO Running C:/Users/ayaar/OneDrive/Desktop/Seera/crawla_muvi/crawlers/main_scraper.py Namespace(crawler='muvi') 
+14:13:47,922 scrapy.utils.log INFO Scrapy 2.5.0 started (bot: scrapybot)
+14:13:47,974 scrapy.utils.log INFO Versions: lxml 4.6.4.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 36.0.0, Platform Windows-10-10.0.22000-SP0
+14:13:47,975 scrapy.utils.log DEBUG Using reactor: twisted.internet.selectreactor.SelectReactor
+14:13:48,44 scrapy.crawler INFO Overridden settings:
+{'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 200,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 403, 404, 408, 429, 307],
+ 'RETRY_TIMES': 5}
+14:13:48,169 scrapy.extensions.telnet INFO Telnet Password: 8cde18f89cf1eada
+14:13:48,254 scrapy.middleware INFO Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+14:13:48,255 root INFO ~~Setting up the scraper~~
+14:14:05,267 root ERROR Starting a new scraper at 2022-09-04 14:14
+14:14:05,331 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:14:06,946 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:14:06,957 root INFO Total parameters fetched from sheet : 0
+14:14:06,964 botocore.hooks DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+14:14:06,982 botocore.hooks DEBUG Changing event name from before-call.apigateway to before-call.api-gateway
+14:14:06,991 botocore.hooks DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+14:14:07,7 botocore.hooks DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+14:14:07,9 botocore.hooks DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+14:14:07,14 botocore.hooks DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+14:14:07,22 botocore.hooks DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+14:14:07,53 botocore.hooks DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+14:14:07,55 botocore.hooks DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+14:14:07,57 botocore.hooks DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+14:14:07,59 botocore.hooks DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+14:14:07,77 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\endpoints.json
+14:14:07,102 botocore.hooks DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x0000018CFD4D68C0>
+14:14:07,391 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+14:14:07,453 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x0000018CFD491510>
+14:14:07,454 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x0000018CFD584CA0>
+14:14:07,642 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x0000018CFD4912D0>
+14:14:07,688 botocore.endpoint DEBUG Setting s3 timeout as (60, 60)
+14:14:07,695 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\_retry.json
+14:14:07,700 botocore.client DEBUG Registering retry handlers for service: s3
+14:14:07,717 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x0000018CFD5011B0>
+14:14:07,719 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x0000018CFD5005E0>
+14:14:07,720 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x0000018CFD501AB0>
+14:14:07,721 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x0000018CFD500550>
+14:14:07,722 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000018CFD8EA530>>
+14:14:07,723 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000018CFD8EA500>>
+14:14:07,724 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x0000018CFD5003A0>
+14:14:07,730 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x0000018CFD383AC0>
+14:14:07,732 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x0000018CFD5008B0>
+14:14:07,734 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000018CFD8EA530>>
+14:14:07,735 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x0000018CFD501BD0>
+14:14:07,736 botocore.endpoint DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': '1B2M2Y8AsgTpgAmY7PhCfg=='}, 'body': b'', 'url': 'https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'context': {'client_region': 'eu-west-1', 'client_config': <botocore.config.Config object at 0x0000018CFD8E90F0>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'stage-crawla-scraping'}}}
+14:14:07,739 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000018CFDB53BE0>>
+14:14:07,741 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method S3EndpointSetter.set_signer of <botocore.utils.S3EndpointSetter object at 0x0000018CFD8EA620>>
+14:14:07,742 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x0000018CFD5766E0>>
+14:14:07,743 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x0000018CFD500280>
+14:14:07,745 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x0000018CFD8EA620>>
+14:14:07,746 botocore.utils DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback.
+14:14:07,748 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/
+14:14:07,749 botocore.utils DEBUG URI updated to: https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/
+14:14:07,752 botocore.auth DEBUG Calculating signature using v4 auth.
+14:14:07,753 botocore.auth DEBUG CanonicalRequest:
+PUT
+/muvi/muvi_2022-09-04/
+
+content-md5:1B2M2Y8AsgTpgAmY7PhCfg==
+host:stage-crawla-scraping.s3.eu-west-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20220904T111407Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+14:14:07,754 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20220904T111407Z
+20220904/eu-west-1/s3/aws4_request
+639d55291b381134d77cf1d337d8f95b25defaefdf738c56cd82dd044aba9259
+14:14:07,756 botocore.auth DEBUG Signature:
+7493491cc2dc3472fab79ca9f5250d4fca1ff8556e08f5d4eaba1504e682dbb8
+14:14:07,760 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/, headers={'User-Agent': b'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': b'1B2M2Y8AsgTpgAmY7PhCfg==', 'X-Amz-Date': b'20220904T111407Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA6HMYQSLG3UZ7EEC6/20220904/eu-west-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=7493491cc2dc3472fab79ca9f5250d4fca1ff8556e08f5d4eaba1504e682dbb8', 'Content-Length': '0'}>
+14:14:07,766 botocore.httpsession DEBUG Certificate path: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\certifi\cacert.pem
+14:14:07,774 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443
+14:14:08,340 urllib3.connectionpool DEBUG https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443 "PUT /muvi/muvi_2022-09-04/ HTTP/1.1" 200 0
+14:14:08,343 botocore.parsers DEBUG Response headers: {'x-amz-id-2': 'L9/FfOm9wLe61mzRtDjCpmX9GGTu82QrS8OVhhsRxXf+7UiN6GS61dRad+HREeso+5axP4oC8D0=', 'x-amz-request-id': 'SGRAQNZ7Y6S9YFS3', 'Date': 'Sun, 04 Sep 2022 11:14:09 GMT', 'ETag': '"d41d8cd98f00b204e9800998ecf8427e"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+14:14:08,345 botocore.parsers DEBUG Response body:
+b''
+14:14:08,349 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000018CFD8EA470>
+14:14:08,351 botocore.retryhandler DEBUG No retry needed.
+14:14:08,352 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000018CFD8EA530>>
+14:15:23,58 root INFO 
+Crawling the movie:
+Movie id: 8dfb60ce-77f2-4900-a6b3-c1f2add3d317
+current index : 0
+
+14:15:23,60 root ERROR an error occurred while fetching movie details for:
+Error: name 'movie_id' is not defined
+14:15:23,113 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:15:24,685 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:15:24,759 root ERROR Ending the scraper at 2022-09-04 14:15
+14:15:24,832 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:15:25,295 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:15:25,392 crawlers INFO starting reactor...
+14:16:10,817 root INFO Running C:\Users\ayaar\OneDrive\Desktop\Seera\crawla_muvi\crawlers\main_scraper.py Namespace(crawler='muvi') 
+14:16:10,855 scrapy.utils.log INFO Scrapy 2.5.0 started (bot: scrapybot)
+14:16:10,896 scrapy.utils.log INFO Versions: lxml 4.6.4.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 36.0.0, Platform Windows-10-10.0.22000-SP0
+14:16:10,897 scrapy.utils.log DEBUG Using reactor: twisted.internet.selectreactor.SelectReactor
+14:16:10,910 scrapy.crawler INFO Overridden settings:
+{'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 200,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 403, 404, 408, 429, 307],
+ 'RETRY_TIMES': 5}
+14:16:10,995 scrapy.extensions.telnet INFO Telnet Password: 0e2a5baa3a32ca3c
+14:16:11,40 scrapy.middleware INFO Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+14:16:11,41 root INFO ~~Setting up the scraper~~
+14:16:11,859 root ERROR Starting a new scraper at 2022-09-04 14:16
+14:16:11,871 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:16:12,374 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:16:12,379 root INFO Total parameters fetched from sheet : 0
+14:16:12,382 botocore.hooks DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+14:16:12,389 botocore.hooks DEBUG Changing event name from before-call.apigateway to before-call.api-gateway
+14:16:12,392 botocore.hooks DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+14:16:12,398 botocore.hooks DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+14:16:12,398 botocore.hooks DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+14:16:12,400 botocore.hooks DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+14:16:12,403 botocore.hooks DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+14:16:12,414 botocore.hooks DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+14:16:12,414 botocore.hooks DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+14:16:12,415 botocore.hooks DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+14:16:12,416 botocore.hooks DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+14:16:12,424 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\endpoints.json
+14:16:12,452 botocore.hooks DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x0000028C7199ED40>
+14:16:12,668 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+14:16:12,700 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x0000028C71955CF0>
+14:16:12,701 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x0000028C71A5B250>
+14:16:12,807 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x0000028C71955AB0>
+14:16:12,815 botocore.endpoint DEBUG Setting s3 timeout as (60, 60)
+14:16:12,818 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\_retry.json
+14:16:12,820 botocore.client DEBUG Registering retry handlers for service: s3
+14:16:12,826 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x0000028C719C13F0>
+14:16:12,826 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x0000028C719C0820>
+14:16:12,827 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x0000028C719C1CF0>
+14:16:12,827 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x0000028C719C0790>
+14:16:12,828 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000028C71D6E200>>
+14:16:12,828 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000028C71D6E1D0>>
+14:16:12,828 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x0000028C719C05E0>
+14:16:12,830 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x0000028C71844040>
+14:16:12,831 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x0000028C719C0AF0>
+14:16:12,831 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000028C71D6E200>>
+14:16:12,831 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x0000028C719C1E10>
+14:16:12,832 botocore.endpoint DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': '1B2M2Y8AsgTpgAmY7PhCfg=='}, 'body': b'', 'url': 'https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'context': {'client_region': 'eu-west-1', 'client_config': <botocore.config.Config object at 0x0000028C71D6CD60>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'stage-crawla-scraping'}}}
+14:16:12,834 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000028C71FEB430>>
+14:16:12,834 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method S3EndpointSetter.set_signer of <botocore.utils.S3EndpointSetter object at 0x0000028C71D6E2F0>>
+14:16:12,835 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x0000028C71A55FF0>>
+14:16:12,835 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x0000028C719C04C0>
+14:16:12,836 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x0000028C71D6E2F0>>
+14:16:12,837 botocore.utils DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback.
+14:16:12,837 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/
+14:16:12,838 botocore.utils DEBUG URI updated to: https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/
+14:16:12,839 botocore.auth DEBUG Calculating signature using v4 auth.
+14:16:12,839 botocore.auth DEBUG CanonicalRequest:
+PUT
+/muvi/muvi_2022-09-04/
+
+content-md5:1B2M2Y8AsgTpgAmY7PhCfg==
+host:stage-crawla-scraping.s3.eu-west-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20220904T111612Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+14:16:12,839 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20220904T111612Z
+20220904/eu-west-1/s3/aws4_request
+055b48c48bbb7eb3d9b9a20b4e95052b6f29e747335962e0c9aea8800c9875c3
+14:16:12,840 botocore.auth DEBUG Signature:
+51095f35029a1c6812e160a6aae60e2ae831761604970ed86c61237075be2c9c
+14:16:12,841 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/, headers={'User-Agent': b'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': b'1B2M2Y8AsgTpgAmY7PhCfg==', 'X-Amz-Date': b'20220904T111612Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA6HMYQSLG3UZ7EEC6/20220904/eu-west-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=51095f35029a1c6812e160a6aae60e2ae831761604970ed86c61237075be2c9c', 'Content-Length': '0'}>
+14:16:12,843 botocore.httpsession DEBUG Certificate path: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\certifi\cacert.pem
+14:16:12,845 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443
+14:16:14,388 urllib3.connectionpool DEBUG https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443 "PUT /muvi/muvi_2022-09-04/ HTTP/1.1" 200 0
+14:16:14,390 botocore.parsers DEBUG Response headers: {'x-amz-id-2': 'UiaCWCenkWkC4h2ULUEVtRNGLLL+JTvCx+F6mKybcy2WoQyLLwBCB3RSXpOMbFnrCWl8wysVUsg=', 'x-amz-request-id': '2AEYGFPNA4TV6DHW', 'Date': 'Sun, 04 Sep 2022 11:16:15 GMT', 'ETag': '"d41d8cd98f00b204e9800998ecf8427e"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+14:16:14,390 botocore.parsers DEBUG Response body:
+b''
+14:16:14,393 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000028C71D6E140>
+14:16:14,394 botocore.retryhandler DEBUG No retry needed.
+14:16:14,395 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000028C71D6E200>>
+14:16:14,401 root ERROR Ending the scraper at 2022-09-04 14:16
+14:16:14,409 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:16:14,843 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:16:14,852 crawlers INFO starting reactor...
+14:20:24,713 root INFO Running C:\Users\ayaar\OneDrive\Desktop\Seera\crawla_muvi\crawlers\main_scraper.py Namespace(crawler='muvi') 
+14:20:24,751 scrapy.utils.log INFO Scrapy 2.5.0 started (bot: scrapybot)
+14:20:24,789 scrapy.utils.log INFO Versions: lxml 4.6.4.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 36.0.0, Platform Windows-10-10.0.22000-SP0
+14:20:24,789 scrapy.utils.log DEBUG Using reactor: twisted.internet.selectreactor.SelectReactor
+14:20:24,802 scrapy.crawler INFO Overridden settings:
+{'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 200,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 403, 404, 408, 429, 307],
+ 'RETRY_TIMES': 5}
+14:20:24,875 scrapy.extensions.telnet INFO Telnet Password: 97078683d5056fdb
+14:20:24,916 scrapy.middleware INFO Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+14:20:24,917 root INFO ~~Setting up the scraper~~
+14:20:25,870 root ERROR Starting a new scraper at 2022-09-04 14:20
+14:20:25,882 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:20:27,491 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:20:27,496 root INFO Total parameters fetched from sheet : 0
+14:20:27,499 botocore.hooks DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+14:20:27,505 botocore.hooks DEBUG Changing event name from before-call.apigateway to before-call.api-gateway
+14:20:27,508 botocore.hooks DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+14:20:27,513 botocore.hooks DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+14:20:27,514 botocore.hooks DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+14:20:27,516 botocore.hooks DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+14:20:27,519 botocore.hooks DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+14:20:27,529 botocore.hooks DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+14:20:27,530 botocore.hooks DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+14:20:27,530 botocore.hooks DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+14:20:27,531 botocore.hooks DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+14:20:27,538 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\endpoints.json
+14:20:27,562 botocore.hooks DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x000001A7E581EDD0>
+14:20:27,794 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+14:20:27,830 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x000001A7E57D9D80>
+14:20:27,831 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x000001A7E58DB2E0>
+14:20:27,938 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x000001A7E57D9B40>
+14:20:27,947 botocore.endpoint DEBUG Setting s3 timeout as (60, 60)
+14:20:27,950 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\_retry.json
+14:20:27,952 botocore.client DEBUG Registering retry handlers for service: s3
+14:20:27,957 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000001A7E5841480>
+14:20:27,958 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000001A7E58408B0>
+14:20:27,958 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000001A7E5841D80>
+14:20:27,959 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000001A7E5840820>
+14:20:27,959 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x000001A7E5BEE4A0>>
+14:20:27,960 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x000001A7E5BEE470>>
+14:20:27,960 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000001A7E5840670>
+14:20:27,962 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000001A7E56C80D0>
+14:20:27,962 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000001A7E5840B80>
+14:20:27,963 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x000001A7E5BEE4A0>>
+14:20:27,963 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000001A7E5841EA0>
+14:20:27,964 botocore.endpoint DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': '1B2M2Y8AsgTpgAmY7PhCfg=='}, 'body': b'', 'url': 'https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'context': {'client_region': 'eu-west-1', 'client_config': <botocore.config.Config object at 0x000001A7E5BED000>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'stage-crawla-scraping'}}}
+14:20:27,965 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000001A7E5E7B6D0>>
+14:20:27,966 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method S3EndpointSetter.set_signer of <botocore.utils.S3EndpointSetter object at 0x000001A7E5BEE590>>
+14:20:27,967 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x000001A7E58D2290>>
+14:20:27,967 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000001A7E5840550>
+14:20:27,968 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000001A7E5BEE590>>
+14:20:27,968 botocore.utils DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback.
+14:20:27,969 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/
+14:20:27,969 botocore.utils DEBUG URI updated to: https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/
+14:20:27,970 botocore.auth DEBUG Calculating signature using v4 auth.
+14:20:27,971 botocore.auth DEBUG CanonicalRequest:
+PUT
+/muvi/muvi_2022-09-04/
+
+content-md5:1B2M2Y8AsgTpgAmY7PhCfg==
+host:stage-crawla-scraping.s3.eu-west-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20220904T112027Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+14:20:27,971 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20220904T112027Z
+20220904/eu-west-1/s3/aws4_request
+e4830cb9451bfaa8ccaa0f99ba2d7e375a55c1c939aaa64e0ebbe56d3f110659
+14:20:27,972 botocore.auth DEBUG Signature:
+1d2e6bec18888a4c4ceeb489ec5880c4f780caf871097283c3a0f2e05301b12c
+14:20:27,973 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/, headers={'User-Agent': b'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': b'1B2M2Y8AsgTpgAmY7PhCfg==', 'X-Amz-Date': b'20220904T112027Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA6HMYQSLG3UZ7EEC6/20220904/eu-west-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=1d2e6bec18888a4c4ceeb489ec5880c4f780caf871097283c3a0f2e05301b12c', 'Content-Length': '0'}>
+14:20:27,975 botocore.httpsession DEBUG Certificate path: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\certifi\cacert.pem
+14:20:27,976 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443
+14:20:28,599 urllib3.connectionpool DEBUG https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443 "PUT /muvi/muvi_2022-09-04/ HTTP/1.1" 200 0
+14:20:28,600 botocore.parsers DEBUG Response headers: {'x-amz-id-2': 'K1JdwscYHKD1bn74IAXYWBHzYITv2ZMjRso7DF2bQ+BP9t2d3lvsGJd6KOYhHldGu7INLflaAog=', 'x-amz-request-id': '7A4Y77WM4DQWX8CK', 'Date': 'Sun, 04 Sep 2022 11:20:29 GMT', 'ETag': '"d41d8cd98f00b204e9800998ecf8427e"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+14:20:28,600 botocore.parsers DEBUG Response body:
+b''
+14:20:28,602 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x000001A7E5BEE3E0>
+14:20:28,603 botocore.retryhandler DEBUG No retry needed.
+14:20:28,603 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x000001A7E5BEE4A0>>
+14:20:30,806 root INFO 
+Crawling the movie:
+Movie id: 8dfb60ce-77f2-4900-a6b3-c1f2add3d317
+Movie name: NOPE
+index : 0
+
+14:20:31,937 root INFO 
+Crawling the movie:
+Movie id: 8cdcbdcc-ed4b-4778-b6a5-bac8f9621841
+Movie name: Khetet Mazinger (Arabic)
+index : 1
+
+14:20:33,256 root INFO 
+Crawling the movie:
+Movie id: 114d7786-22da-4f11-b73d-136e7426cc45
+Movie name: Route 10 (Arabic)
+index : 2
+
+14:20:35,86 root INFO 
+Crawling the movie:
+Movie id: 1c76f73a-d691-485e-97ef-c3609c90b21c
+Movie name: Spider-Man: No Way Home - The More Fun Stuff
+index : 3
+
+14:20:36,328 root INFO 
+Crawling the movie:
+Movie id: 8395216c-efe7-4de0-b01b-d6bdb8823ab1
+Movie name: Stowaway
+index : 4
+
+14:20:37,567 root INFO 
+Crawling the movie:
+Movie id: 91c9b734-4318-4d6c-959f-de717b929f19
+Movie name: Where The Crawdads Sing
+index : 5
+
+14:20:38,543 root INFO 
+Crawling the movie:
+Movie id: 4a578c80-055c-4573-a843-824e0f86d639
+Movie name: Stoker Hills
+index : 6
+
+14:20:39,431 root INFO 
+Crawling the movie:
+Movie id: 9cfaf7ae-b8a9-40a9-aa49-b21ec5a9e18f
+Movie name: Into the Deep
+index : 7
+
+14:20:41,728 root INFO 
+Crawling the movie:
+Movie id: c60fbbcb-b23a-46e6-9fb6-c718c1f4696e
+Movie name: The Harbinger
+index : 8
+
+14:20:41,981 root INFO 
+Crawling the movie:
+Movie id: 770940ac-59e2-4b96-9441-1bd1773f9c07
+Movie name: Tad The Lost Explorer and the Emerald Tablet
+index : 9
+
+14:20:43,133 root INFO 
+Crawling the movie:
+Movie id: 69b0569c-a5fd-4ec4-8a3e-d866587fb302
+Movie name: After Ever Happy
+index : 10
+
+14:20:44,411 root INFO 
+Crawling the movie:
+Movie id: 79a56f53-5940-463e-b2f8-570a73a01a20
+Movie name: Beast
+index : 11
+
+14:20:45,548 root INFO 
+Crawling the movie:
+Movie id: 6ae98668-5721-4410-94e1-dca4b4e69cca
+Movie name: Liger (Hindi)
+index : 12
+
+14:20:47,390 root INFO 
+Crawling the movie:
+Movie id: d27f56ee-a842-4648-88fa-4be83debb472
+Movie name: Orphan: First Kill
+index : 13
+
+14:20:48,656 root INFO 
+Crawling the movie:
+Movie id: f74e68aa-7280-4618-9079-5e2c795543b4
+Movie name: Bullet Train
+index : 14
+
+14:20:49,195 root INFO 
+Crawling the movie:
+Movie id: e85fff75-673f-4554-9eef-1e0b2b0a1ca2
+Movie name: Nna Thaan Case Kodu (Malayalam)
+index : 15
+
+14:20:50,765 root INFO 
+Crawling the movie:
+Movie id: f3979b16-dd7e-42a6-9efd-684bf388703b
+Movie name: DC League of Super-Pets
+index : 16
+
+14:20:51,600 root INFO 
+Crawling the movie:
+Movie id: 5291b279-7837-47e2-a8d3-2f8f891f30d6
+Movie name: Don’t Worry Darling
+index : 17
+
+14:20:54,165 root INFO 
+Crawling the movie:
+Movie id: 4707835d-03ea-4e1c-963c-374621931bdc
+Movie name: 3amohom
+index : 18
+
+14:20:54,610 root INFO 
+Crawling the movie:
+Movie id: 58da6b1b-e407-40ce-89dd-09a8742582c8
+Movie name: El Da3wa 3ammah (Arabic)
+index : 19
+
+14:20:57,648 root INFO 
+Crawling the movie:
+Movie id: 0a66c1b7-4fea-439b-b187-f3b357f868a0
+Movie name: KKN (Indonesian)
+index : 20
+
+14:20:58,848 root INFO 
+Crawling the movie:
+Movie id: b09bd597-bd05-4bae-8488-52ea1313cbdf
+Movie name: PUSS IN BOOTS: The Last Wish
+index : 21
+
+14:21:00,255 root INFO 
+Crawling the movie:
+Movie id: 05be0519-cb40-444d-aadd-38d97e32e45f
+Movie name: Thallumaala (Malayalam)
+index : 22
+
+14:21:00,573 root INFO 
+Crawling the movie:
+Movie id: f4082150-03d6-4c32-89c5-570c0a3e3f8d
+Movie name: Tasleem Ahali (Arabic)
+index : 23
+
+14:21:02,128 root INFO 
+Crawling the movie:
+Movie id: acb61717-f89a-43c6-8f19-f7c6a4262f15
+Movie name: Panama
+index : 24
+
+14:21:04,968 root INFO 
+Crawling the movie:
+Movie id: 09b010f3-f45f-4ec6-96aa-28b277a05a36
+Movie name: Al Rajol Al Rabea
+index : 25
+
+14:21:06,91 root INFO 
+Crawling the movie:
+Movie id: e0790197-fdc4-4232-9233-cd72da964519
+Movie name: Top Gun: Maverick
+index : 26
+
+14:21:41,481 root INFO 
+Crawling the movie:
+Movie id: 03fd7998-00d4-4adb-b296-a88c5b52fdf2
+Movie name: Jo & Jo ( Malayalam)
+index : 27
+
+14:21:42,725 root INFO 
+Crawling the movie:
+Movie id: bd70e418-bf69-4d8d-9094-26d1912027c2
+Movie name: Oldboy
+index : 28
+
+14:21:44,34 root INFO 
+Crawling the movie:
+Movie id: ecd051c9-4f37-415e-8782-518aff258504
+Movie name: Operation Fortune: Rusu De Guerre
+index : 29
+
+14:21:45,324 root INFO 
+Crawling the movie:
+Movie id: e1e7ad9e-6cce-475f-8dcf-1e027cabafa9
+Movie name: Bahebek
+index : 30
+
+14:21:46,39 root INFO 
+Crawling the movie:
+Movie id: 221f57cf-987b-403d-8887-fd97236c9df0
+Movie name: Ticket to Paradise
+index : 31
+
+14:21:48,71 root INFO 
+Crawling the movie:
+Movie id: a9eb8675-418d-4e4c-bba6-79b2673501a7
+Movie name: Smile
+index : 32
+
+14:21:49,461 root INFO 
+Crawling the movie:
+Movie id: a03c42a8-6964-4cc9-a99f-b9f6474f34c0
+Movie name: Minions: The Rise of Gru
+index : 33
+
+14:21:50,521 root INFO 
+Crawling the movie:
+Movie id: 0acaa96b-f26a-406c-ba10-0849f4d2b386
+Movie name: Al HAYBA
+index : 34
+
+14:21:51,637 root INFO 
+Crawling the movie:
+Movie id: 95d233d6-4c17-4fc0-995d-8c05d9b6e68e
+Movie name: Black Adam
+index : 35
+
+14:21:53,544 root INFO 
+Crawling the movie:
+Movie id: e57e7b1c-423c-4cdc-a707-fdbac181307e
+Movie name: The Invitation
+index : 36
+
+14:21:55,18 root INFO 
+Crawling the movie:
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+Movie name: Ottu (Malayalam)
+index : 37
+
+14:21:56,127 root DEBUG cinemas_locations.0.city does exist
+14:21:56,127 root DEBUG cinemas_attributes.0.name does exist
+14:21:56,128 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:21:56,136 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:21:57,670 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:21:57,677 root DEBUG cinemas_locations.0.city does exist
+14:21:57,677 root DEBUG cinemas_attributes.0.name does exist
+14:21:57,678 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:21:57,685 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:21:58,108 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:21:58,114 root DEBUG cinemas_locations.0.city does exist
+14:21:58,115 root DEBUG cinemas_attributes.0.name does exist
+14:21:58,115 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:21:58,122 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:21:58,580 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:21:58,589 root DEBUG cinemas_locations.0.city does exist
+14:21:58,590 root DEBUG cinemas_attributes.0.name does exist
+14:21:58,591 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:21:58,599 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:21:59,34 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:21:59,40 root DEBUG cinemas_locations.0.city does exist
+14:21:59,41 root DEBUG cinemas_attributes.0.name does exist
+14:21:59,41 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:21:59,48 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:21:59,508 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:21:59,514 root DEBUG cinemas_locations.0.city does exist
+14:21:59,515 root DEBUG cinemas_attributes.0.name does exist
+14:21:59,515 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:21:59,523 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:21:59,973 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:21:59,979 root DEBUG cinemas_locations.0.city does exist
+14:21:59,979 root DEBUG cinemas_attributes.0.name does exist
+14:21:59,980 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:21:59,987 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:00,438 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:00,447 root DEBUG cinemas_locations.0.city does exist
+14:22:00,448 root DEBUG cinemas_attributes.0.name does exist
+14:22:00,449 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:00,457 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:01,946 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:01,952 root DEBUG cinemas_locations.0.city does exist
+14:22:01,953 root DEBUG cinemas_attributes.0.name does exist
+14:22:01,953 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:01,960 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:02,391 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:02,397 root DEBUG cinemas_locations.0.city does exist
+14:22:02,397 root DEBUG cinemas_attributes.0.name does exist
+14:22:02,398 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:02,405 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:02,865 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:02,871 root DEBUG cinemas_locations.0.city does exist
+14:22:02,872 root DEBUG cinemas_attributes.0.name does exist
+14:22:02,872 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:02,879 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:03,308 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:03,314 root DEBUG cinemas_locations.0.city does exist
+14:22:03,314 root DEBUG cinemas_attributes.0.name does exist
+14:22:03,315 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:03,322 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:03,777 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:03,783 root DEBUG cinemas_locations.0.city does exist
+14:22:03,784 root DEBUG cinemas_attributes.0.name does exist
+14:22:03,784 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:03,793 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:04,257 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:04,263 root DEBUG cinemas_locations.0.city does exist
+14:22:04,264 root DEBUG cinemas_attributes.0.name does exist
+14:22:04,264 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:04,271 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:04,734 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:04,741 root DEBUG cinemas_locations.0.city does exist
+14:22:04,741 root DEBUG cinemas_attributes.0.name does exist
+14:22:04,742 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:04,749 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:05,256 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:05,265 root DEBUG cinemas_locations.0.city does exist
+14:22:05,266 root DEBUG cinemas_attributes.0.name does exist
+14:22:05,267 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:05,281 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:05,742 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:05,748 root DEBUG cinemas_locations.0.city does exist
+14:22:05,749 root DEBUG cinemas_attributes.0.name does exist
+14:22:05,749 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:05,756 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:06,188 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:06,195 root DEBUG cinemas_locations.0.city does exist
+14:22:06,195 root DEBUG cinemas_attributes.0.name does exist
+14:22:06,196 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:06,204 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:06,673 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:06,682 root DEBUG cinemas_locations.0.city does exist
+14:22:06,683 root DEBUG cinemas_attributes.0.name does exist
+14:22:06,684 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:06,696 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:07,211 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:07,218 root DEBUG cinemas_locations.0.city does exist
+14:22:07,218 root DEBUG cinemas_attributes.0.name does exist
+14:22:07,219 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:07,226 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:07,701 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:07,711 root DEBUG cinemas_locations.0.city does exist
+14:22:07,711 root DEBUG cinemas_attributes.0.name does exist
+14:22:07,712 root ERROR Error while validating movie: 
+Movie name: NOPE
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:07,720 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:08,202 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:08,210 root DEBUG cinemas_locations.0.city does exist
+14:22:08,211 root DEBUG cinemas_attributes.0.name does exist
+14:22:08,211 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:08,218 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:08,694 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:08,701 root DEBUG cinemas_locations.0.city does exist
+14:22:08,701 root DEBUG cinemas_attributes.0.name does exist
+14:22:08,702 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:08,711 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:09,185 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:09,191 root DEBUG cinemas_locations.0.city does exist
+14:22:09,191 root DEBUG cinemas_attributes.0.name does exist
+14:22:09,192 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:09,199 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:09,624 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:09,633 root DEBUG cinemas_locations.0.city does exist
+14:22:09,634 root DEBUG cinemas_attributes.0.name does exist
+14:22:09,634 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:09,644 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:10,92 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:10,98 root DEBUG cinemas_locations.0.city does exist
+14:22:10,98 root DEBUG cinemas_attributes.0.name does exist
+14:22:10,99 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:10,106 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:10,534 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:10,540 root DEBUG cinemas_locations.0.city does exist
+14:22:10,540 root DEBUG cinemas_attributes.0.name does exist
+14:22:10,541 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:10,548 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:11,21 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:11,27 root DEBUG cinemas_locations.0.city does exist
+14:22:11,27 root DEBUG cinemas_attributes.0.name does exist
+14:22:11,28 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:11,35 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:11,464 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:11,470 root DEBUG cinemas_locations.0.city does exist
+14:22:11,471 root DEBUG cinemas_attributes.0.name does exist
+14:22:11,471 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:11,478 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:11,958 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:11,964 root DEBUG cinemas_locations.0.city does exist
+14:22:11,965 root DEBUG cinemas_attributes.0.name does exist
+14:22:11,965 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:11,972 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:12,410 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:12,416 root DEBUG cinemas_locations.0.city does exist
+14:22:12,417 root DEBUG cinemas_attributes.0.name does exist
+14:22:12,417 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:12,424 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:13,880 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:13,886 root DEBUG cinemas_locations.0.city does exist
+14:22:13,887 root DEBUG cinemas_attributes.0.name does exist
+14:22:13,887 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:13,894 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:14,346 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:14,352 root DEBUG cinemas_locations.0.city does exist
+14:22:14,353 root DEBUG cinemas_attributes.0.name does exist
+14:22:14,354 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:14,361 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:14,854 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:14,860 root DEBUG cinemas_locations.0.city does exist
+14:22:14,861 root DEBUG cinemas_attributes.0.name does exist
+14:22:14,861 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:14,869 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:15,326 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:15,333 root DEBUG cinemas_locations.0.city does exist
+14:22:15,334 root DEBUG cinemas_attributes.0.name does exist
+14:22:15,334 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:15,341 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:15,934 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:15,940 root DEBUG cinemas_locations.0.city does exist
+14:22:15,941 root DEBUG cinemas_attributes.0.name does exist
+14:22:15,941 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:15,948 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:16,429 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:16,435 root DEBUG cinemas_locations.0.city does exist
+14:22:16,436 root DEBUG cinemas_attributes.0.name does exist
+14:22:16,436 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:16,443 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:16,899 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:16,908 root DEBUG cinemas_locations.0.city does exist
+14:22:16,909 root DEBUG cinemas_attributes.0.name does exist
+14:22:16,909 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:16,919 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:17,421 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:17,430 root DEBUG cinemas_locations.0.city does exist
+14:22:17,431 root DEBUG cinemas_attributes.0.name does exist
+14:22:17,431 root ERROR Error while validating movie: 
+Movie name: Khetet Mazinger (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:17,439 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:22:17,864 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:22:17,871 root DEBUG cinemas_locations.0.city does exist
+14:22:17,872 root DEBUG cinemas_attributes.0.name does exist
+14:22:17,872 root ERROR Error while validating movie: 
+Movie name: Route 10 (Arabic)
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+ ERROR : list indices must be integers or slices, not str
+14:22:17,880 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:24:24,66 root INFO Running C:\Users\ayaar\OneDrive\Desktop\Seera\crawla_muvi\crawlers\main_scraper.py Namespace(crawler='muvi') 
+14:24:24,105 scrapy.utils.log INFO Scrapy 2.5.0 started (bot: scrapybot)
+14:24:24,145 scrapy.utils.log INFO Versions: lxml 4.6.4.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 36.0.0, Platform Windows-10-10.0.22000-SP0
+14:24:24,146 scrapy.utils.log DEBUG Using reactor: twisted.internet.selectreactor.SelectReactor
+14:24:24,159 scrapy.crawler INFO Overridden settings:
+{'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 200,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 403, 404, 408, 429, 307],
+ 'RETRY_TIMES': 5}
+14:24:24,237 scrapy.extensions.telnet INFO Telnet Password: f9fb6186ac3087d1
+14:24:24,279 scrapy.middleware INFO Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+14:24:24,280 root INFO ~~Setting up the scraper~~
+14:24:25,131 root ERROR Starting a new scraper at 2022-09-04 14:24
+14:24:25,144 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:24:26,735 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:24:26,741 root INFO Total parameters fetched from sheet : 0
+14:24:26,743 botocore.hooks DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+14:24:26,750 botocore.hooks DEBUG Changing event name from before-call.apigateway to before-call.api-gateway
+14:24:26,753 botocore.hooks DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+14:24:26,758 botocore.hooks DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+14:24:26,759 botocore.hooks DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+14:24:26,761 botocore.hooks DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+14:24:26,764 botocore.hooks DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+14:24:26,774 botocore.hooks DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+14:24:26,775 botocore.hooks DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+14:24:26,776 botocore.hooks DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+14:24:26,776 botocore.hooks DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+14:24:26,784 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\endpoints.json
+14:24:26,806 botocore.hooks DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x0000020F160FED40>
+14:24:27,57 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+14:24:27,101 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x0000020F160B5CF0>
+14:24:27,102 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x0000020F161B7250>
+14:24:27,240 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x0000020F160B5AB0>
+14:24:27,252 botocore.endpoint DEBUG Setting s3 timeout as (60, 60)
+14:24:27,258 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\_retry.json
+14:24:27,261 botocore.client DEBUG Registering retry handlers for service: s3
+14:24:27,273 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x0000020F1612D3F0>
+14:24:27,274 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x0000020F1612C820>
+14:24:27,275 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x0000020F1612DCF0>
+14:24:27,275 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x0000020F1612C790>
+14:24:27,276 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000020F164E2AD0>>
+14:24:27,277 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000020F164E2AA0>>
+14:24:27,278 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x0000020F1612C5E0>
+14:24:27,280 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x0000020F15FA4040>
+14:24:27,281 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x0000020F1612CAF0>
+14:24:27,282 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000020F164E2AD0>>
+14:24:27,283 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x0000020F1612DE10>
+14:24:27,283 botocore.endpoint DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': '1B2M2Y8AsgTpgAmY7PhCfg=='}, 'body': b'', 'url': 'https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'context': {'client_region': 'eu-west-1', 'client_config': <botocore.config.Config object at 0x0000020F164E1630>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'stage-crawla-scraping'}}}
+14:24:27,286 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000020F1675BD00>>
+14:24:27,287 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method S3EndpointSetter.set_signer of <botocore.utils.S3EndpointSetter object at 0x0000020F164E2BC0>>
+14:24:27,288 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x0000020F161A68C0>>
+14:24:27,288 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x0000020F1612C4C0>
+14:24:27,289 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x0000020F164E2BC0>>
+14:24:27,290 botocore.utils DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback.
+14:24:27,290 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/
+14:24:27,291 botocore.utils DEBUG URI updated to: https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/
+14:24:27,292 botocore.auth DEBUG Calculating signature using v4 auth.
+14:24:27,294 botocore.auth DEBUG CanonicalRequest:
+PUT
+/muvi/muvi_2022-09-04/
+
+content-md5:1B2M2Y8AsgTpgAmY7PhCfg==
+host:stage-crawla-scraping.s3.eu-west-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20220904T112427Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+14:24:27,294 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20220904T112427Z
+20220904/eu-west-1/s3/aws4_request
+761bc58a1eb18ac51000a01ae783bf9c5f2efdd59097ccd50cd1aa578afde0ae
+14:24:27,295 botocore.auth DEBUG Signature:
+a1df13ca6bc3b64b6f7602d6c149263b0cef213edb06fc3e93354b74eb98d12e
+14:24:27,297 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/, headers={'User-Agent': b'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': b'1B2M2Y8AsgTpgAmY7PhCfg==', 'X-Amz-Date': b'20220904T112427Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA6HMYQSLG3UZ7EEC6/20220904/eu-west-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=a1df13ca6bc3b64b6f7602d6c149263b0cef213edb06fc3e93354b74eb98d12e', 'Content-Length': '0'}>
+14:24:27,307 botocore.httpsession DEBUG Certificate path: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\certifi\cacert.pem
+14:24:27,327 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443
+14:24:28,890 urllib3.connectionpool DEBUG https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443 "PUT /muvi/muvi_2022-09-04/ HTTP/1.1" 200 0
+14:24:28,891 botocore.parsers DEBUG Response headers: {'x-amz-id-2': 'T7LJPim221cf7IUkh7KW3541H+ht9tLVpkbFQTd+Q4/eHnkF2hcrUr/uQi8VmwBZCz3kaQ5KDas=', 'x-amz-request-id': 'JC35EY7KAY4JE1Q4', 'Date': 'Sun, 04 Sep 2022 11:24:29 GMT', 'ETag': '"d41d8cd98f00b204e9800998ecf8427e"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+14:24:28,892 botocore.parsers DEBUG Response body:
+b''
+14:24:28,894 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000020F164E2A10>
+14:24:28,895 botocore.retryhandler DEBUG No retry needed.
+14:24:28,895 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000020F164E2AD0>>
+14:24:32,582 root INFO 
+Crawling the movie:
+Movie id: 8dfb60ce-77f2-4900-a6b3-c1f2add3d317
+Movie name: NOPE
+index : 0
+
+14:24:34,0 root INFO 
+Crawling the movie:
+Movie id: 8cdcbdcc-ed4b-4778-b6a5-bac8f9621841
+Movie name: Khetet Mazinger (Arabic)
+index : 1
+
+14:24:35,269 root INFO 
+Crawling the movie:
+Movie id: 114d7786-22da-4f11-b73d-136e7426cc45
+Movie name: Route 10 (Arabic)
+index : 2
+
+14:24:36,546 root INFO 
+Crawling the movie:
+Movie id: 1c76f73a-d691-485e-97ef-c3609c90b21c
+Movie name: Spider-Man: No Way Home - The More Fun Stuff
+index : 3
+
+14:24:38,951 root INFO 
+Crawling the movie:
+Movie id: 8395216c-efe7-4de0-b01b-d6bdb8823ab1
+Movie name: Stowaway
+index : 4
+
+14:24:39,497 root INFO 
+Crawling the movie:
+Movie id: 91c9b734-4318-4d6c-959f-de717b929f19
+Movie name: Where The Crawdads Sing
+index : 5
+
+14:24:40,204 root INFO 
+Crawling the movie:
+Movie id: 4a578c80-055c-4573-a843-824e0f86d639
+Movie name: Stoker Hills
+index : 6
+
+14:24:41,405 root INFO 
+Crawling the movie:
+Movie id: 9cfaf7ae-b8a9-40a9-aa49-b21ec5a9e18f
+Movie name: Into the Deep
+index : 7
+
+14:24:43,114 root INFO 
+Crawling the movie:
+Movie id: c60fbbcb-b23a-46e6-9fb6-c718c1f4696e
+Movie name: The Harbinger
+index : 8
+
+14:24:44,500 root INFO 
+Crawling the movie:
+Movie id: 770940ac-59e2-4b96-9441-1bd1773f9c07
+Movie name: Tad The Lost Explorer and the Emerald Tablet
+index : 9
+
+14:24:45,979 root INFO 
+Crawling the movie:
+Movie id: 69b0569c-a5fd-4ec4-8a3e-d866587fb302
+Movie name: After Ever Happy
+index : 10
+
+14:24:47,412 root INFO 
+Crawling the movie:
+Movie id: 79a56f53-5940-463e-b2f8-570a73a01a20
+Movie name: Beast
+index : 11
+
+14:24:48,824 root INFO 
+Crawling the movie:
+Movie id: 6ae98668-5721-4410-94e1-dca4b4e69cca
+Movie name: Liger (Hindi)
+index : 12
+
+14:24:49,874 root INFO 
+Crawling the movie:
+Movie id: d27f56ee-a842-4648-88fa-4be83debb472
+Movie name: Orphan: First Kill
+index : 13
+
+14:24:51,813 root INFO 
+Crawling the movie:
+Movie id: f74e68aa-7280-4618-9079-5e2c795543b4
+Movie name: Bullet Train
+index : 14
+
+14:24:52,828 root INFO 
+Crawling the movie:
+Movie id: e85fff75-673f-4554-9eef-1e0b2b0a1ca2
+Movie name: Nna Thaan Case Kodu (Malayalam)
+index : 15
+
+14:24:53,593 root INFO 
+Crawling the movie:
+Movie id: f3979b16-dd7e-42a6-9efd-684bf388703b
+Movie name: DC League of Super-Pets
+index : 16
+
+14:24:54,976 root INFO 
+Crawling the movie:
+Movie id: 5291b279-7837-47e2-a8d3-2f8f891f30d6
+Movie name: Don’t Worry Darling
+index : 17
+
+14:24:56,204 root INFO 
+Crawling the movie:
+Movie id: 4707835d-03ea-4e1c-963c-374621931bdc
+Movie name: 3amohom
+index : 18
+
+14:24:57,901 root INFO 
+Crawling the movie:
+Movie id: 58da6b1b-e407-40ce-89dd-09a8742582c8
+Movie name: El Da3wa 3ammah (Arabic)
+index : 19
+
+14:24:58,985 root INFO 
+Crawling the movie:
+Movie id: 0a66c1b7-4fea-439b-b187-f3b357f868a0
+Movie name: KKN (Indonesian)
+index : 20
+
+14:25:00,420 root INFO 
+Crawling the movie:
+Movie id: b09bd597-bd05-4bae-8488-52ea1313cbdf
+Movie name: PUSS IN BOOTS: The Last Wish
+index : 21
+
+14:25:00,878 root INFO 
+Crawling the movie:
+Movie id: 05be0519-cb40-444d-aadd-38d97e32e45f
+Movie name: Thallumaala (Malayalam)
+index : 22
+
+14:25:02,330 root INFO 
+Crawling the movie:
+Movie id: f4082150-03d6-4c32-89c5-570c0a3e3f8d
+Movie name: Tasleem Ahali (Arabic)
+index : 23
+
+14:25:03,886 root INFO 
+Crawling the movie:
+Movie id: acb61717-f89a-43c6-8f19-f7c6a4262f15
+Movie name: Panama
+index : 24
+
+14:25:04,812 root INFO 
+Crawling the movie:
+Movie id: 09b010f3-f45f-4ec6-96aa-28b277a05a36
+Movie name: Al Rajol Al Rabea
+index : 25
+
+14:25:06,908 root INFO 
+Crawling the movie:
+Movie id: e0790197-fdc4-4232-9233-cd72da964519
+Movie name: Top Gun: Maverick
+index : 26
+
+14:25:07,526 root INFO 
+Crawling the movie:
+Movie id: 03fd7998-00d4-4adb-b296-a88c5b52fdf2
+Movie name: Jo & Jo ( Malayalam)
+index : 27
+
+14:25:08,238 root INFO 
+Crawling the movie:
+Movie id: bd70e418-bf69-4d8d-9094-26d1912027c2
+Movie name: Oldboy
+index : 28
+
+14:25:09,456 root INFO 
+Crawling the movie:
+Movie id: ecd051c9-4f37-415e-8782-518aff258504
+Movie name: Operation Fortune: Rusu De Guerre
+index : 29
+
+14:25:10,797 root INFO 
+Crawling the movie:
+Movie id: e1e7ad9e-6cce-475f-8dcf-1e027cabafa9
+Movie name: Bahebek
+index : 30
+
+14:25:11,638 root INFO 
+Crawling the movie:
+Movie id: 221f57cf-987b-403d-8887-fd97236c9df0
+Movie name: Ticket to Paradise
+index : 31
+
+14:25:12,788 root INFO 
+Crawling the movie:
+Movie id: a9eb8675-418d-4e4c-bba6-79b2673501a7
+Movie name: Smile
+index : 32
+
+14:25:14,163 root INFO 
+Crawling the movie:
+Movie id: a03c42a8-6964-4cc9-a99f-b9f6474f34c0
+Movie name: Minions: The Rise of Gru
+index : 33
+
+14:25:15,398 root INFO 
+Crawling the movie:
+Movie id: 0acaa96b-f26a-406c-ba10-0849f4d2b386
+Movie name: Al HAYBA
+index : 34
+
+14:25:16,654 root INFO 
+Crawling the movie:
+Movie id: 95d233d6-4c17-4fc0-995d-8c05d9b6e68e
+Movie name: Black Adam
+index : 35
+
+14:25:17,951 root INFO 
+Crawling the movie:
+Movie id: e57e7b1c-423c-4cdc-a707-fdbac181307e
+Movie name: The Invitation
+index : 36
+
+14:25:18,853 root INFO 
+Crawling the movie:
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+Movie name: Ottu (Malayalam)
+index : 37
+
+14:25:20,277 root INFO Total valid movies: 23
+14:25:20,280 root DEBUG cinemas_locations.0.city does exist
+14:25:20,281 root DEBUG cinemas_attributes.0.name does exist
+14:25:20,426 root INFO Pushing show times available into S3 with total 860 showtimes
+14:25:20,449 root INFO Saving csv file: C:\Users\ayaar\OneDrive\Desktop\Seera\crawla_muvi\crawlers/muvi_2022-09-04
+14:25:20,464 root ERROR Ending the scraper at 2022-09-04 14:25
+14:25:20,473 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:25:21,449 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:25:21,512 crawlers INFO starting reactor...
+14:27:31,98 root INFO Running C:\Users\ayaar\OneDrive\Desktop\Seera\crawla_muvi\crawlers\main_scraper.py Namespace(crawler='muvi') 
+14:27:31,138 scrapy.utils.log INFO Scrapy 2.5.0 started (bot: scrapybot)
+14:27:31,179 scrapy.utils.log INFO Versions: lxml 4.6.4.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 36.0.0, Platform Windows-10-10.0.22000-SP0
+14:27:31,180 scrapy.utils.log DEBUG Using reactor: twisted.internet.selectreactor.SelectReactor
+14:27:31,193 scrapy.crawler INFO Overridden settings:
+{'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 200,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 403, 404, 408, 429, 307],
+ 'RETRY_TIMES': 5}
+14:27:31,276 scrapy.extensions.telnet INFO Telnet Password: 682c6814d7d21cca
+14:27:31,319 scrapy.middleware INFO Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+14:27:31,320 root INFO ~~Setting up the scraper~~
+14:27:32,442 root ERROR Starting a new scraper at 2022-09-04 14:27
+14:27:32,454 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:27:34,41 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:27:34,46 root INFO Total parameters fetched from sheet : 0
+14:27:34,49 botocore.hooks DEBUG Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+14:27:34,56 botocore.hooks DEBUG Changing event name from before-call.apigateway to before-call.api-gateway
+14:27:34,59 botocore.hooks DEBUG Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+14:27:34,64 botocore.hooks DEBUG Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+14:27:34,65 botocore.hooks DEBUG Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+14:27:34,67 botocore.hooks DEBUG Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+14:27:34,70 botocore.hooks DEBUG Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+14:27:34,80 botocore.hooks DEBUG Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+14:27:34,80 botocore.hooks DEBUG Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+14:27:34,81 botocore.hooks DEBUG Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+14:27:34,82 botocore.hooks DEBUG Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+14:27:34,89 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\endpoints.json
+14:27:34,112 botocore.hooks DEBUG Event choose-service-name: calling handler <function handle_service_name_alias at 0x00000238BA96EDD0>
+14:27:34,329 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+14:27:34,362 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x00000238BA925D80>
+14:27:34,362 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x00000238BAA2B2E0>
+14:27:34,471 botocore.hooks DEBUG Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x00000238BA925B40>
+14:27:34,478 botocore.endpoint DEBUG Setting s3 timeout as (60, 60)
+14:27:34,482 botocore.loaders DEBUG Loading JSON file: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\_retry.json
+14:27:34,484 botocore.client DEBUG Registering retry handlers for service: s3
+14:27:34,489 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x00000238BA995480>
+14:27:34,490 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x00000238BA9948B0>
+14:27:34,490 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x00000238BA995D80>
+14:27:34,491 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x00000238BA994820>
+14:27:34,491 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x00000238BAD42A10>>
+14:27:34,492 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x00000238BAD429E0>>
+14:27:34,492 botocore.hooks DEBUG Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x00000238BA994670>
+14:27:34,494 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x00000238BA8140D0>
+14:27:34,494 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x00000238BA994B80>
+14:27:34,495 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x00000238BAD42A10>>
+14:27:34,495 botocore.hooks DEBUG Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x00000238BA995EA0>
+14:27:34,495 botocore.endpoint DEBUG Making request for OperationModel(name=PutObject) with params: {'url_path': '/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': '1B2M2Y8AsgTpgAmY7PhCfg=='}, 'body': b'', 'url': 'https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/', 'context': {'client_region': 'eu-west-1', 'client_config': <botocore.config.Config object at 0x00000238BAD41570>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'stage-crawla-scraping'}}}
+14:27:34,497 botocore.hooks DEBUG Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x00000238BAFBBC40>>
+14:27:34,498 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method S3EndpointSetter.set_signer of <botocore.utils.S3EndpointSetter object at 0x00000238BAD42B00>>
+14:27:34,498 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x00000238BAA1A800>>
+14:27:34,498 botocore.hooks DEBUG Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x00000238BA994550>
+14:27:34,499 botocore.hooks DEBUG Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x00000238BAD42B00>>
+14:27:34,500 botocore.utils DEBUG Defaulting to S3 virtual host style addressing with path style addressing fallback.
+14:27:34,500 botocore.utils DEBUG Checking for DNS compatible bucket for: https://s3.eu-west-1.amazonaws.com/stage-crawla-scraping/muvi/muvi_2022-09-04/
+14:27:34,500 botocore.utils DEBUG URI updated to: https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/
+14:27:34,501 botocore.auth DEBUG Calculating signature using v4 auth.
+14:27:34,502 botocore.auth DEBUG CanonicalRequest:
+PUT
+/muvi/muvi_2022-09-04/
+
+content-md5:1B2M2Y8AsgTpgAmY7PhCfg==
+host:stage-crawla-scraping.s3.eu-west-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20220904T112734Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+14:27:34,503 botocore.auth DEBUG StringToSign:
+AWS4-HMAC-SHA256
+20220904T112734Z
+20220904/eu-west-1/s3/aws4_request
+3903173b1967b167d037cd14d9c3159afc807c6e1086b6822de9190201265d06
+14:27:34,504 botocore.auth DEBUG Signature:
+00cffdeee2b68fc7ba29725d78930d4395c734eaa78ef9fc6d866ab41c7997e6
+14:27:34,505 botocore.endpoint DEBUG Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com/muvi/muvi_2022-09-04/, headers={'User-Agent': b'Boto3/1.18.16 Python/3.10.0 Windows/10 Botocore/1.21.65', 'Content-MD5': b'1B2M2Y8AsgTpgAmY7PhCfg==', 'X-Amz-Date': b'20220904T112734Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA6HMYQSLG3UZ7EEC6/20220904/eu-west-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=00cffdeee2b68fc7ba29725d78930d4395c734eaa78ef9fc6d866ab41c7997e6', 'Content-Length': '0'}>
+14:27:34,507 botocore.httpsession DEBUG Certificate path: C:\Users\ayaar\AppData\Local\Programs\Python\Python310\lib\site-packages\certifi\cacert.pem
+14:27:34,508 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443
+14:27:36,155 urllib3.connectionpool DEBUG https://stage-crawla-scraping.s3.eu-west-1.amazonaws.com:443 "PUT /muvi/muvi_2022-09-04/ HTTP/1.1" 200 0
+14:27:36,157 botocore.parsers DEBUG Response headers: {'x-amz-id-2': 'NeJxaX0LXFwsCMX4I/ZLX6bG+HNATtRKQ+zxVjPm2UCxoqCR5rJasaqcY+kecDQdkJNiWWqdT9Q=', 'x-amz-request-id': 'VB6XC837ST33FE9E', 'Date': 'Sun, 04 Sep 2022 11:27:37 GMT', 'ETag': '"d41d8cd98f00b204e9800998ecf8427e"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+14:27:36,157 botocore.parsers DEBUG Response body:
+b''
+14:27:36,159 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x00000238BAD42950>
+14:27:36,160 botocore.retryhandler DEBUG No retry needed.
+14:27:36,160 botocore.hooks DEBUG Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x00000238BAD42A10>>
+14:27:39,765 root INFO 
+Crawling the movie:
+Movie id: 8dfb60ce-77f2-4900-a6b3-c1f2add3d317
+Movie name: NOPE
+index : 0
+
+14:27:40,833 root INFO 
+Crawling the movie:
+Movie id: 8cdcbdcc-ed4b-4778-b6a5-bac8f9621841
+Movie name: Khetet Mazinger (Arabic)
+index : 1
+
+14:27:41,949 root INFO 
+Crawling the movie:
+Movie id: 114d7786-22da-4f11-b73d-136e7426cc45
+Movie name: Route 10 (Arabic)
+index : 2
+
+14:27:42,958 root INFO 
+Crawling the movie:
+Movie id: 1c76f73a-d691-485e-97ef-c3609c90b21c
+Movie name: Spider-Man: No Way Home - The More Fun Stuff
+index : 3
+
+14:27:44,596 root INFO 
+Crawling the movie:
+Movie id: 8395216c-efe7-4de0-b01b-d6bdb8823ab1
+Movie name: Stowaway
+index : 4
+
+14:27:45,701 root INFO 
+Crawling the movie:
+Movie id: 91c9b734-4318-4d6c-959f-de717b929f19
+Movie name: Where The Crawdads Sing
+index : 5
+
+14:27:46,607 root INFO 
+Crawling the movie:
+Movie id: 4a578c80-055c-4573-a843-824e0f86d639
+Movie name: Stoker Hills
+index : 6
+
+14:27:48,428 root INFO 
+Crawling the movie:
+Movie id: 9cfaf7ae-b8a9-40a9-aa49-b21ec5a9e18f
+Movie name: Into the Deep
+index : 7
+
+14:27:49,205 root INFO 
+Crawling the movie:
+Movie id: c60fbbcb-b23a-46e6-9fb6-c718c1f4696e
+Movie name: The Harbinger
+index : 8
+
+14:27:50,224 root INFO 
+Crawling the movie:
+Movie id: 770940ac-59e2-4b96-9441-1bd1773f9c07
+Movie name: Tad The Lost Explorer and the Emerald Tablet
+index : 9
+
+14:27:51,627 root INFO 
+Crawling the movie:
+Movie id: 69b0569c-a5fd-4ec4-8a3e-d866587fb302
+Movie name: After Ever Happy
+index : 10
+
+14:27:52,680 root INFO 
+Crawling the movie:
+Movie id: 79a56f53-5940-463e-b2f8-570a73a01a20
+Movie name: Beast
+index : 11
+
+14:27:54,868 root INFO 
+Crawling the movie:
+Movie id: 6ae98668-5721-4410-94e1-dca4b4e69cca
+Movie name: Liger (Hindi)
+index : 12
+
+14:27:55,83 root INFO 
+Crawling the movie:
+Movie id: d27f56ee-a842-4648-88fa-4be83debb472
+Movie name: Orphan: First Kill
+index : 13
+
+14:27:56,609 root INFO 
+Crawling the movie:
+Movie id: f74e68aa-7280-4618-9079-5e2c795543b4
+Movie name: Bullet Train
+index : 14
+
+14:27:59,595 root INFO 
+Crawling the movie:
+Movie id: e85fff75-673f-4554-9eef-1e0b2b0a1ca2
+Movie name: Nna Thaan Case Kodu (Malayalam)
+index : 15
+
+14:28:00,983 root INFO 
+Crawling the movie:
+Movie id: f3979b16-dd7e-42a6-9efd-684bf388703b
+Movie name: DC League of Super-Pets
+index : 16
+
+14:28:01,457 root INFO 
+Crawling the movie:
+Movie id: 5291b279-7837-47e2-a8d3-2f8f891f30d6
+Movie name: Don’t Worry Darling
+index : 17
+
+14:28:02,666 root INFO 
+Crawling the movie:
+Movie id: 4707835d-03ea-4e1c-963c-374621931bdc
+Movie name: 3amohom
+index : 18
+
+14:28:47,650 root INFO 
+Crawling the movie:
+Movie id: 58da6b1b-e407-40ce-89dd-09a8742582c8
+Movie name: El Da3wa 3ammah (Arabic)
+index : 19
+
+14:28:48,585 root INFO 
+Crawling the movie:
+Movie id: 0a66c1b7-4fea-439b-b187-f3b357f868a0
+Movie name: KKN (Indonesian)
+index : 20
+
+14:28:50,41 root INFO 
+Crawling the movie:
+Movie id: b09bd597-bd05-4bae-8488-52ea1313cbdf
+Movie name: PUSS IN BOOTS: The Last Wish
+index : 21
+
+14:28:50,850 root INFO 
+Crawling the movie:
+Movie id: 05be0519-cb40-444d-aadd-38d97e32e45f
+Movie name: Thallumaala (Malayalam)
+index : 22
+
+14:28:51,795 root INFO 
+Crawling the movie:
+Movie id: f4082150-03d6-4c32-89c5-570c0a3e3f8d
+Movie name: Tasleem Ahali (Arabic)
+index : 23
+
+14:28:54,52 root INFO 
+Crawling the movie:
+Movie id: acb61717-f89a-43c6-8f19-f7c6a4262f15
+Movie name: Panama
+index : 24
+
+14:28:54,253 root INFO 
+Crawling the movie:
+Movie id: 09b010f3-f45f-4ec6-96aa-28b277a05a36
+Movie name: Al Rajol Al Rabea
+index : 25
+
+14:28:55,330 root INFO 
+Crawling the movie:
+Movie id: e0790197-fdc4-4232-9233-cd72da964519
+Movie name: Top Gun: Maverick
+index : 26
+
+14:28:56,758 root INFO 
+Crawling the movie:
+Movie id: 03fd7998-00d4-4adb-b296-a88c5b52fdf2
+Movie name: Jo & Jo ( Malayalam)
+index : 27
+
+14:28:58,72 root INFO 
+Crawling the movie:
+Movie id: bd70e418-bf69-4d8d-9094-26d1912027c2
+Movie name: Oldboy
+index : 28
+
+14:28:59,643 root INFO 
+Crawling the movie:
+Movie id: ecd051c9-4f37-415e-8782-518aff258504
+Movie name: Operation Fortune: Rusu De Guerre
+index : 29
+
+14:29:00,854 root INFO 
+Crawling the movie:
+Movie id: e1e7ad9e-6cce-475f-8dcf-1e027cabafa9
+Movie name: Bahebek
+index : 30
+
+14:29:02,430 root INFO 
+Crawling the movie:
+Movie id: 221f57cf-987b-403d-8887-fd97236c9df0
+Movie name: Ticket to Paradise
+index : 31
+
+14:29:03,595 root INFO 
+Crawling the movie:
+Movie id: a9eb8675-418d-4e4c-bba6-79b2673501a7
+Movie name: Smile
+index : 32
+
+14:29:04,929 root INFO 
+Crawling the movie:
+Movie id: a03c42a8-6964-4cc9-a99f-b9f6474f34c0
+Movie name: Minions: The Rise of Gru
+index : 33
+
+14:29:06,207 root INFO 
+Crawling the movie:
+Movie id: 0acaa96b-f26a-406c-ba10-0849f4d2b386
+Movie name: Al HAYBA
+index : 34
+
+14:29:07,364 root INFO 
+Crawling the movie:
+Movie id: 95d233d6-4c17-4fc0-995d-8c05d9b6e68e
+Movie name: Black Adam
+index : 35
+
+14:29:08,776 root INFO 
+Crawling the movie:
+Movie id: e57e7b1c-423c-4cdc-a707-fdbac181307e
+Movie name: The Invitation
+index : 36
+
+14:29:10,194 root INFO 
+Crawling the movie:
+Movie id: 8dfd1696-b583-485b-8abb-f7e948e53266
+Movie name: Ottu (Malayalam)
+index : 37
+
+14:29:11,310 root INFO Total valid movies: 23
+14:29:11,311 root DEBUG cinemas_locations.0.city does exist
+14:29:11,311 root DEBUG cinemas_attributes.0.name does exist
+14:29:11,331 root INFO Total showtimes: 860 showtime
+14:29:11,336 root INFO Saving csv file: C:\Users\ayaar\OneDrive\Desktop\Seera\crawla_muvi\crawlers/muvi_2022-09-04
+14:29:11,339 root ERROR Ending the scraper at 2022-09-04 14:29
+14:29:11,340 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): hooks.slack.com:443
+14:29:12,867 urllib3.connectionpool DEBUG https://hooks.slack.com:443 "POST /services/T08HY8BRR/BTRN12TCY/jJ1jVxSDHTIOOCJxLnK8mRwf%20 HTTP/1.1" 200 22
+14:29:12,923 crawlers INFO starting reactor...
