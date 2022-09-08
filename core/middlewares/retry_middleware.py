@@ -4,11 +4,8 @@ from urllib.parse import parse_qs
 from scrapy.downloadermiddlewares.retry import RetryMiddleware
 from scrapy.utils.response import response_status_message
 from .proxy_middleware import CustomProxyMiddleware
-from core.constants.global_constants import SLACK_MAIN_CHANNEL_NAME
 import time
 
-from core.integrations import slack_messages
-import random
 
 class TooManyRequestsRetryMiddleware(RetryMiddleware):
 
@@ -27,7 +24,7 @@ class TooManyRequestsRetryMiddleware(RetryMiddleware):
         elif response.status == 407:
             message = f"unable to complete request , {request} \n" \
                       f"Authentication required."
-            slack_messages.send_slack_message(message, SLACK_MAIN_CHANNEL_NAME)
+            logging.error(message)
         elif response.status in self.retry_http_codes:
             self.crawler.engine.pause()
             message = f'Too many requests are hitting the server:- response_code: {response.status} ' \
@@ -47,6 +44,6 @@ class TooManyRequestsRetryMiddleware(RetryMiddleware):
                           f'\n Return Date: {params.get("return_date")}' \
                           f'\n Route : {params.get("origin_code")}_{params.get("destination_code")}' \
                           f'\n Failed {request.meta.get("retry_times", 0)} times.'
-                slack_messages.send_slack_message(message)
+                logging.error(message)
             return retry_request or response
         return response

@@ -5,8 +5,6 @@ import datetime
 from inline_requests import inline_requests
 from scrapy.http import FormRequest
 
-from core.constants.global_constants import SLACK_MAIN_CHANNEL_NAME
-from core.integrations import slack_messages
 from crawlers.muvi.scraper.configs import MuviConfigs
 
 
@@ -59,7 +57,7 @@ class MuviSpider(MuviConfigs, scrapy.Spider):
             message = f"an error occurred while fetching the access token\n" \
                       f"{response}" \
                       f"\nError: {error}"
-            slack_messages.send_slack_message(message, SLACK_MAIN_CHANNEL_NAME)
+            logging.error(message)
 
     @inline_requests
     def fetch_id(self, response):
@@ -110,4 +108,4 @@ class MuviSpider(MuviConfigs, scrapy.Spider):
                       f"\nMovie id: {self.movie_id}" \
                       f"\nMovie name: {self.movie_name}" \
                       f"\nError: {error}"
-            slack_messages.send_slack_message(message, SLACK_MAIN_CHANNEL_NAME)
+            logging.error(message)

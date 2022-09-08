@@ -1,12 +1,9 @@
 import datetime
 import logging
-import os
 from datetime import date
 from logging.handlers import RotatingFileHandler
 
 from core.crawlers.base_crawler import BaseCrawler
-from core.integrations.google_sheets import read_input_data
-from core.integrations import slack_messages
 
 
 class MuviConfigs(BaseCrawler):
@@ -48,16 +45,3 @@ class MuviConfigs(BaseCrawler):
                         datefmt='%H:%M:%S',
                         level=logging.DEBUG)
 
-    def read_api_list(self):
-        sheet_df = read_input_data()
-        api_list = list((sheet_df['api_ids'].iloc[0].split(",")))
-        return [int(api_id) for api_id in api_list]
-
-    def parsing_dates(self, date):
-        day = date.strftime("%d")
-        month = datetime.datetime.strptime(date.strftime("%m"), "%m").strftime("%b")
-        year = date.strftime("%Y")
-        return day + month + year
-
-    def read_spider_params(self):
-        pass

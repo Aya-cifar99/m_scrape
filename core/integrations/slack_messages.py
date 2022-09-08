@@ -3,7 +3,6 @@ import logging
 
 import requests
 
-from core.constants.global_constants import WEBHOOK_URL, SLACK_WARNING_CHANNEL_NAME
 
 
 def send_slack_message(message, channel=SLACK_WARNING_CHANNEL_NAME):
