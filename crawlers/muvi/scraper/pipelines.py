@@ -23,21 +23,6 @@ class JsonWriterPipeline:
 
     def open_spider(self, spider):
         logging.error(f"Starting a new scraper at {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}")
-        # try:
-        #     self.s3 = boto3.client(
-        #         's3',
-        #         region_name=REGION,
-        #         aws_access_key_id=os.environ.get('AWS_ACCESS_KEY_ID'),
-        #         aws_secret_access_key=os.environ.get('AWS_SECRET_ACCESS_KEY'),
-        #     )
-        #     self.directory_name = f'muvi/muvi_{datetime.date.today().strftime("%Y-%m-%d")}'
-        #     self.s3.put_object(Bucket=BUCKET_NAME, Key=f'{self.directory_name}/')
-        # except Exception as err:
-        #     message = f"Unable to access S3 , \n" \
-        #               f"ERROR : {err} \n " \
-        #               f"\nEnding the scraper at {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}"
-        #     logging.error(message)
-        #     sys.exit(message)
 
 
     def close_spider(self, spider):
