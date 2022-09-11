@@ -28,7 +28,7 @@ class JsonWriterPipeline:
     def close_spider(self, spider):
         logging.error(f"Ending the scraper at {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}")
 
-    def process_item(self, movies):
+    def process_item(self, movies, spider):
         try:
             self.validate_movies(movies)
         except Exception as err:
